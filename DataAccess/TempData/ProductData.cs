@@ -2,10 +2,10 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-
+//bu dal classlarında hep aynı işlevi gören metotlar yazıyorum ama bunun yerine abstract generic temel bir class kullanılsa ve IData yerine o abstract classtan inherit olunsa nasıl olur?
 namespace DataAccess.TempData
 {
-    public class ProductData
+    public class ProductData:IData<Product>
     {
         private List<Product> _products;
         //private List<Category> _categories;
@@ -26,6 +26,44 @@ namespace DataAccess.TempData
                 new Product { Id = 8, Name = "Kerastase", Amount =200, CategoryId=4,Price=12,Rating=8.6,SellerId=3},
                 new Product { Id = 9, Name = "Xiaomi", Amount =250, CategoryId=2,Price=700,Rating=8.6,SellerId=1}
             };
+        }
+
+        public void Add(Product item)
+        {
+            _products.Add(item);
+        }
+
+        public List<Product> GetAll()
+        {
+            return _products;
+        }
+
+        public Product GetItemById(int id)
+        {
+            return _products.Find(x => x.Id == id);
+        }
+
+        public void Remove(Product item)
+        {
+            _products.Remove(item);
+        }
+
+        public void RemoveItemById(int id)
+        {
+            Product c = GetItemById(id);
+            _products.Remove(c);
+        }
+
+        public void Update(Product item)
+        {//update itemi listedekinden farklı çıkarsa patlayabilir
+            Product p = GetItemById(item.Id);
+            int index = _products.IndexOf(p);
+            _products[index] = item;
+        }
+
+        public List<Product> GetAllByCategory(int categoryId)
+        {
+            return _products.FindAll(x => x.CategoryId == categoryId);
         }
     }
 }

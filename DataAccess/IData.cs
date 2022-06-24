@@ -6,7 +6,7 @@ namespace DataAccess
 {
     public interface IData<T>
     {
-        IList<T> GetAll();
+        List<T> GetAll();
         T GetItemById(int id);
         void Add(T item);
         void Remove(T item);

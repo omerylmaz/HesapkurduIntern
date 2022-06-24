@@ -20,7 +20,7 @@ namespace DataAccess.TempData
             };
         }
 
-        public IList<Category> GetAll()
+        public List<Category> GetAll()
         {
             return _categories;
         }
