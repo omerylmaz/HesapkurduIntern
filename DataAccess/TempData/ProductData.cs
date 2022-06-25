@@ -11,13 +11,10 @@ namespace DataAccess.TempData
     public class ProductData:IProductData
     {
         private List<Product> _products;
-        //private List<Category> _categories;
         private List<Seller> _sellers;
 
         public ProductData()
         {
-            //CategoryData cd = new CategoryData();
-            //_categories = cd._categories;
             _products = new List<Product> {
                 new Product { Id = 1, Name = "Macbook", Amount =20, CategoryId=1,Price=1200,Rating=8.6,SellerId=1},
                 new Product { Id = 2, Name = "Asus", Amount =40, CategoryId=1,Price=1000,Rating=7.6,SellerId=1},
@@ -42,7 +39,6 @@ namespace DataAccess.TempData
         }
         public IEnumerable<Product> GetAll(Expression<Func<Product, bool>> predicate)
         {
-            //IQueryable<Product> products = _products.
             return _products.AsQueryable().Where(predicate);
         }
 

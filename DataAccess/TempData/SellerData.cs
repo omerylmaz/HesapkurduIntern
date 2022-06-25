@@ -2,6 +2,7 @@
 using Infrastructure.Models;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 
@@ -51,14 +52,9 @@ namespace DataAccess.TempData
             _sellers[index] = item;
         }
 
-        public List<Seller> GetAllByAny(Func<object, bool> filter)
-        {
-            throw new NotImplementedException();
-        }
-
         public IEnumerable<Seller> GetAll(Expression<Func<Seller, bool>> predicate)
         {
-            throw new NotImplementedException();
+            return _sellers.AsQueryable().Where(predicate);
         }
     }
 }
