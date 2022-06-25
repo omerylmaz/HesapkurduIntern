@@ -2,6 +2,8 @@
 using Infrastructure.Models;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 //bu dal classlarında hep aynı işlevi gören metotlar yazıyorum ama bunun yerine abstract generic temel bir class kullanılsa ve IData yerine o abstract classtan inherit olunsa nasıl olur?
 namespace DataAccess.TempData
@@ -38,6 +40,11 @@ namespace DataAccess.TempData
         {
             return _products;
         }
+        public IEnumerable<Product> GetAll(Expression<Func<Product, bool>> predicate)
+        {
+            //IQueryable<Product> products = _products.
+            return _products.AsQueryable().Where(predicate);
+        }
 
         public Product GetItemById(int id)
         {
@@ -56,7 +63,7 @@ namespace DataAccess.TempData
         }
 
         public void Update(Product item)
-        {//update itemi listedekinden farklı çıkarsa patlayabilir
+        {//update iteminin id si listedekinden farklı çıkarsa patlayabilir
             Product p = GetItemById(item.Id);
             int index = _products.IndexOf(p);
             _products[index] = item;
@@ -66,5 +73,6 @@ namespace DataAccess.TempData
         {
             return _products.FindAll(x => x.CategoryId == categoryId);
         }
+
     }
 }

@@ -8,10 +8,11 @@ namespace BusinessLogic.Base
     public interface IProductService
     {
         List<Product> GetAllProducts();
+        IEnumerable<Product> GetProductsByCategoryId(int categoryId);
         Product GetProduct(int id);
         void AddProduct(Product product);
         void RemoveProduct(Product product);
-        void RemoveProductItemById(int id);
+        void RemoveProductById(int id);
         void Update(Product product);
     }
 }

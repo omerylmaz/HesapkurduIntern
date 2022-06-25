@@ -30,12 +30,17 @@ namespace BusinessLogic.Services
             return _productData.GetItemById(id);
         }
 
+        public IEnumerable<Product> GetProductsByCategoryId(int categoryId)
+        {
+            return _productData.GetAll(p => p.CategoryId == categoryId);
+        }
+
         public void RemoveProduct(Product product)
         {
             _productData.Remove(product);
         }
 
-        public void RemoveProductItemById(int id)
+        public void RemoveProductById(int id)
         {
             _productData.RemoveItemById(id);
         }
