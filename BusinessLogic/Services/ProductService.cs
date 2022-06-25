@@ -1,5 +1,6 @@
 ﻿using BusinessLogic.Base;
 using DataAccess;
+using DataAccess.Base;
 using Infrastructure.Models;
 using System;
 using System.Collections.Generic;
@@ -9,8 +10,8 @@ namespace BusinessLogic.Services
 {
     public class ProductService : IProductService
     {
-        private IData<Product> _productData;
-        public ProductService(IData<Product> productData)
+        private IProductData _productData;
+        public ProductService(IProductData productData)
         {
             _productData = productData;
         }

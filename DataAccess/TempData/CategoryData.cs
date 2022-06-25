@@ -1,11 +1,12 @@
-﻿using Infrastructure.Models;
+﻿using DataAccess.Base;
+using Infrastructure.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace DataAccess.TempData
 {
-    public class CategoryData:IData<Category>
+    public class CategoryData:ICategoryData
     {
         public List<Category> _categories { get; set; }
         public CategoryData()

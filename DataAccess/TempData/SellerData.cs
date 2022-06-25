@@ -1,11 +1,12 @@
-﻿using Infrastructure.Models;
+﻿using DataAccess.Base;
+using Infrastructure.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace DataAccess.TempData
 {
-    public class SellerData:IData<Seller>
+    public class SellerData:ISellerData
     {
         List<Seller> _sellers;
         public SellerData()

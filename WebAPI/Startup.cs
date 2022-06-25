@@ -1,3 +1,8 @@
+using BusinessLogic.Base;
+using BusinessLogic.Services;
+using DataAccess;
+using DataAccess.Base;
+using DataAccess.TempData;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -26,6 +31,8 @@ namespace WebAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddSingleton<IProductService, ProductService>();
+            services.AddSingleton<IProductData, ProductData>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

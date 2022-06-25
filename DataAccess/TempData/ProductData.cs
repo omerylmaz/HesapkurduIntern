@@ -1,11 +1,12 @@
-﻿using Infrastructure.Models;
+﻿using DataAccess.Base;
+using Infrastructure.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
 //bu dal classlarında hep aynı işlevi gören metotlar yazıyorum ama bunun yerine abstract generic temel bir class kullanılsa ve IData yerine o abstract classtan inherit olunsa nasıl olur?
 namespace DataAccess.TempData
 {
-    public class ProductData:IData<Product>
+    public class ProductData:IProductData
     {
         private List<Product> _products;
         //private List<Category> _categories;
