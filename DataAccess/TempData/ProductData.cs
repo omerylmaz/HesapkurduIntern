@@ -59,10 +59,23 @@ namespace DataAccess.TempData
         }
 
         public void Update(Product item)
-        {//update iteminin id si listedekinden farklı çıkarsa patlayabilir
-            Product p = GetItemById(item.Id);
+        {
+            Product p;
+            try
+            {
+            p = GetItemById(item.Id);//update iteminin id si listedekinden farklı çıkarsa patlayabilir
+            }
+            catch (IndexOutOfRangeException e)
+            {
+                throw (Exception)e.Data;
+            }
             int index = _products.IndexOf(p);
-            _products[index] = item;
+            _products[index].Name = item.Name ?? _products[index].Name;
+            _products[index].Amount = item.Amount > 0 ? item.Amount : _products[index].Amount;
+            _products[index].Price = item.Price > 0 ? item.Price : _products[index].Amount;
+            _products[index].Rating = item.Rating > 0 ? item.Rating : _products[index].Rating;
+            _products[index].CategoryId = item.CategoryId > 0 ? item.CategoryId : _products[index].CategoryId;
+            _products[index].SellerId = item.SellerId > 0 ? item.SellerId : _products[index].SellerId;
         }
 
         public List<Product> GetAllByCategory(int categoryId)

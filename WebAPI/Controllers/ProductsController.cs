@@ -2,6 +2,7 @@
 using Infrastructure.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System;
 
 namespace WebAPI.Controllers
 {
@@ -37,7 +38,7 @@ namespace WebAPI.Controllers
         public IActionResult AddProduct(Product product)
         {
             _productService.AddProduct(product);
-            return Ok();
+            return new ObjectResult(product) { StatusCode=StatusCodes.Status201Created}; // Bunun yerine direk Ok() deyipte geçilebilir
         }
 
         [HttpDelete] // Bunun yerine HttpPost da kullanılabilir
@@ -50,8 +51,19 @@ namespace WebAPI.Controllers
         [HttpPut] //Bunun yerine HttpPost da kullanılabilir
         public IActionResult UpdateProduct(Product product)
         {
-            _productService.Update(product);
-            return Ok(product);
+            try
+            {
+                _productService.Update(product);
+                return Ok(product);
+            }
+            catch (IndexOutOfRangeException e)
+            {
+                return NotFound(e.Message);
+            }
+            catch
+            {
+                return BadRequest();
+            }
         }
 
     }

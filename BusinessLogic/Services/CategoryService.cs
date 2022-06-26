@@ -1,5 +1,6 @@
 ﻿using BusinessLogic.Base;
 using DataAccess;
+using DataAccess.Base;
 using Infrastructure.Models;
 using System;
 using System.Collections.Generic;
@@ -9,8 +10,8 @@ namespace BusinessLogic.Services
 {
     public class CategoryService : ICategoryService
     {
-        private IData<Category> _categoryData;
-        public CategoryService(IData<Category> categoryData)
+        private ICategoryData _categoryData;
+        public CategoryService(ICategoryData categoryData)
         {
             _categoryData = categoryData;
         }
@@ -34,7 +35,7 @@ namespace BusinessLogic.Services
             _categoryData.Remove(category);
         }
 
-        public void RemoveCategoryItemById(int id)
+        public void RemoveCategoryById(int id)
         {
             _categoryData.RemoveItemById(id);
         }

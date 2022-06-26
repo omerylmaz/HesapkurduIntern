@@ -33,6 +33,10 @@ namespace WebAPI
             services.AddControllers();
             services.AddSingleton<IProductService, ProductService>();
             services.AddSingleton<IProductData, ProductData>();
+            services.AddSingleton<ICategoryService, CategoryService>();
+            services.AddSingleton<ICategoryData, CategoryData>();
+            services.AddSingleton<ISellerService, SellerService>();
+            services.AddSingleton<ISellerData, SellerData>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

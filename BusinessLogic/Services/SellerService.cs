@@ -1,5 +1,6 @@
 ﻿using BusinessLogic.Base;
 using DataAccess;
+using DataAccess.Base;
 using Infrastructure.Models;
 using System;
 using System.Collections.Generic;
@@ -9,8 +10,8 @@ namespace BusinessLogic.Services
 {
     public class SellerService : ISellerService
     {
-        private IData<Seller> _sellerData;
-        public SellerService(IData<Seller> sellerData)
+        private ISellerData _sellerData;
+        public SellerService(ISellerData sellerData)
         {
             _sellerData = sellerData;
         }
@@ -24,7 +25,12 @@ namespace BusinessLogic.Services
             return _sellerData.GetAll();
         }
 
-        public Seller GetSeller(int id)
+        public IEnumerable<Seller> GetSellersByRating(double rating)
+        {
+            return _sellerData.GetAll(p => p.Rating >= rating);
+        }
+
+        public Seller GetSellerById(int id)
         {
             return _sellerData.GetItemById(id);
         }
@@ -34,7 +40,7 @@ namespace BusinessLogic.Services
             _sellerData.Remove(seller);
         }
 
-        public void RemoveSellerItemById(int id)
+        public void RemoveSellerById(int id)
         {
             _sellerData.RemoveItemById(id);
         }
