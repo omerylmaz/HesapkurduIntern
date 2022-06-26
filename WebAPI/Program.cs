@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Hosting;
+﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
@@ -24,3 +24,4 @@ namespace WebAPI
                 });
     }
 }
+//generic bir interface classtan implement ettiğim zaman addSingleton da hata alıyorum
