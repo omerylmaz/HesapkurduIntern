@@ -56,13 +56,13 @@ namespace WebAPI.Controllers
                 _productService.Update(product);
                 return Ok(product);
             }
-            catch (IndexOutOfRangeException e)
+            catch (ArgumentOutOfRangeException e)
             {
                 return NotFound(e.Message);
             }
-            catch
+            catch(Exception e)
             {
-                return BadRequest();
+                return BadRequest(e.Message);
             }
         }
 
