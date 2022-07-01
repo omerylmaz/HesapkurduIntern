@@ -31,12 +31,19 @@ namespace DataAccess.TempData
 
         public Seller GetItemById(int id)
         {
-            return _sellers.Find(x => x.Id == id);
+            //Seller s = _sellers.FirstOrDefault(x => x.Id == id);
+            //if (s == null) throw new KeyNotFoundException();
+            return _sellers.FirstOrDefault(x => x.Id == id);
         }
 
         public void Add(Seller item)
         {
-            _sellers.Add(item);
+            Seller s = GetItemById(item.Id);
+            if (s == null) _sellers.Add(item);
+            else
+            {
+                throw new Exception("This id exists");
+            }
         }
 
         public void Remove(Seller item)
@@ -44,16 +51,27 @@ namespace DataAccess.TempData
             _sellers.Remove(item);
         }
 
-        public void RemoveItemById(int id)
+        public Seller RemoveItemById(int id)
         {
-            Seller c = GetItemById(id);
-            _sellers.Remove(c);
+            Seller s = GetItemById(id);
+            if (s == null)
+                throw new KeyNotFoundException();
+            _sellers.Remove(s);
+            return s;
         }
 
         public void Update(Seller item)
         {
-            Seller c = GetItemById(item.Id);
-            int index = _sellers.IndexOf(c);
+            Seller s;
+            try
+            {
+                s = GetItemById(item.Id);//update iteminin id si listedekinden farklı çıkarsa patlayabilir
+            }
+            catch (IndexOutOfRangeException e)
+            {
+                throw (Exception)e.Data;
+            }
+            int index = _sellers.IndexOf(s);
             _sellers[index].Name = item.Name ?? _sellers[index].Name;
             _sellers[index].Email = item.Email ?? _sellers[index].Email;
             _sellers[index].PhoneNumber = item.PhoneNumber ?? _sellers[index].PhoneNumber;

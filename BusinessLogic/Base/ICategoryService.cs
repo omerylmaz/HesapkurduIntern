@@ -11,7 +11,7 @@ namespace BusinessLogic.Base
         Category GetCategory(int id);
         void AddCategory(Category category);
         void RemoveCategory(Category category);
-        void RemoveCategoryById(int id);
+        Category RemoveCategoryById(int id);
         void Update(Category category);
     }
 }

@@ -30,12 +30,19 @@ namespace DataAccess.TempData
 
         public Category GetItemById(int id)
         {
-            return _categories.Find(x => x.Id == id);
+            //Category c = _categories.FirstOrDefault(x => x.Id == id);
+            //if (c == null) throw new KeyNotFoundException();
+            return _categories.FirstOrDefault(x => x.Id == id); ;
         }
 
         public void Add(Category item)
         {
-            _categories.Add(item);
+            Category c = GetItemById(item.Id);
+            if (c == null) _categories.Add(item);
+            else
+            {
+                throw new Exception("This id exists");
+            }
         }
 
         public void Remove(Category item)
@@ -43,15 +50,27 @@ namespace DataAccess.TempData
             _categories.Remove(item);
         }
 
-        public void RemoveItemById(int id)
+        public Category RemoveItemById(int id)
         {
             Category c = GetItemById(id);
+            if (c == null)
+                throw new KeyNotFoundException();
+
             _categories.Remove(c);
+            return c;
         }
 
         public void Update(Category item)
         {
-            Category c = GetItemById(item.Id);
+            Category c;
+            try
+            {
+                c = GetItemById(item.Id);//update iteminin id si listedekinden farklı çıkarsa patlayabilir
+            }
+            catch (IndexOutOfRangeException e)
+            {
+                throw (Exception)e.Data;
+            }
             int index = _categories.IndexOf(c);
             _categories[index] = item;
         }

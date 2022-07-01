@@ -6,7 +6,7 @@ using System;
 
 namespace WebAPI.Controllers
 {
-    [Route("[controller]/[action]")]
+    [Route("products")]
     [ApiController]
     public class ProductsController : ControllerBase
     {
@@ -17,38 +17,76 @@ namespace WebAPI.Controllers
         }
 
         [HttpGet]
+        [Route("GetAllProducts")]
         public IActionResult GetAllProducts()
         {
-            return Ok(_productService.GetAllProducts());
+            try
+            {
+                var x = _productService.GetAllProducts();
+                if (x == null)
+                    return NotFound();
+
+                return Ok(_productService.GetAllProducts());
+
+            }
+            catch (System.Exception e)
+            {
+                return StatusCode(500, e.Message);
+            }
         }
 
         [HttpGet]
+        [Route("GetProductById")]
         public IActionResult GetProductById(int productId)
         {
-            return Ok(_productService.GetProduct(productId));
-        }
+            var x = _productService.GetProduct(productId);
 
-        [HttpGet]
-        public IActionResult GetProductsByCategoryId(int categoryId)
-        {
-            return Ok(_productService.GetProductsByCategoryId(categoryId));
+            try
+            {
+                if (x == null)
+                    return NotFound();
+
+                return Ok(x);
+            }
+            catch (System.Exception e)
+            {
+                return StatusCode(500, e.Message);
+            }
         }
 
         [HttpPost]
+        [Route("AddProduct")]
         public IActionResult AddProduct(Product product)
         {
-            _productService.AddProduct(product);
-            return new ObjectResult(product) { StatusCode=StatusCodes.Status201Created}; // Bunun yerine direk Ok() deyipte geçilebilir
+            try
+            {
+                _productService.AddProduct(product);
+                return StatusCode(201, product);
+            }
+            catch (System.Exception e)
+            {
+                return StatusCode(500, e.Message);
+            }
         }
 
+
         [HttpDelete] // Bunun yerine HttpPost da kullanılabilir
+        [Route("RemoveProductById")]
         public IActionResult RemoveProductById(int productId)
         {
-            _productService.RemoveProductById(productId);
-            return Ok();
+            try
+            {
+                Product p = _productService.RemoveProductById(productId);
+                return Ok(p);
+            }
+            catch (System.Exception e)
+            {
+                return StatusCode(500, e.Message);
+            }
         }
 
         [HttpPut] //Bunun yerine HttpPost da kullanılabilir
+        [Route("UpdateProduct")]
         public IActionResult UpdateProduct(Product product)
         {
             try
@@ -56,13 +94,9 @@ namespace WebAPI.Controllers
                 _productService.Update(product);
                 return Ok(product);
             }
-            catch (ArgumentOutOfRangeException e)
+            catch (System.Exception e)
             {
-                return NotFound(e.Message);
-            }
-            catch(Exception e)
-            {
-                return BadRequest(e.Message);
+                return StatusCode(500, e.Message);
             }
         }
 

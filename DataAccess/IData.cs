@@ -13,7 +13,7 @@ namespace DataAccess
         T GetItemById(int id);
         void Add(T item);
         void Remove(T item);
-        void RemoveItemById(int id);
+        T RemoveItemById(int id);
         void Update(T item);
 
     }

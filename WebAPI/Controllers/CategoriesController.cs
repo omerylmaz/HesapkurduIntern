@@ -2,10 +2,11 @@
 using Infrastructure.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace WebAPI.Controllers
 {
-    [Route("[controller]/[action]")]
+    [Route("categories")]
     [ApiController]
     public class CategoriesController : ControllerBase
     {
@@ -16,36 +17,87 @@ namespace WebAPI.Controllers
         }
 
         [HttpGet]
+        [Route("GetAllCategories")]
         public IActionResult GetAllCategories()
         {
-            return Ok(_categoryService.GetAllCategories());
+            try
+            {
+                var x = _categoryService.GetAllCategories();
+                if (x == null)
+                    return NotFound();
+
+                return Ok(_categoryService.GetAllCategories());
+
+            }
+            catch (System.Exception e)
+            {
+                return StatusCode(500, e.Message);
+            }
         }
 
         [HttpGet]
+        [Route("GetCategoryById")]
         public IActionResult GetCategoryById(int categoryId)
         {
-            return Ok(_categoryService.GetCategory(categoryId));
+            var x = _categoryService.GetCategory(categoryId);
+
+            try
+            {
+                if (x == null)
+                    return NotFound();
+                    
+                return Ok(x);
+            }
+            catch (System.Exception e)
+            {
+                return StatusCode(500, e.Message);
+            }
         }
 
         [HttpPost]
+        [Route("AddCategory")]
         public IActionResult AddCategory(Category category)
         {
-            _categoryService.AddCategory(category);
-            return Ok();
+            try
+            {
+                _categoryService.AddCategory(category);
+                return StatusCode(201);
+            }
+            catch (System.Exception e)
+            {
+                return StatusCode(500, e.Message);
+            }
         }
 
+
         [HttpDelete] // Bunun yerine HttpPost da kullanılabilir
+        [Route("RemoveCategoryById")]
         public IActionResult RemoveCategoryById(int categoryId)
         {
-            _categoryService.RemoveCategoryById(categoryId);
-            return Ok();
+            try
+            {
+            Category c = _categoryService.RemoveCategoryById(categoryId);
+            return Ok(c);
+            }
+            catch (System.Exception e)
+            {
+                return StatusCode(500, e.Message);
+            }
         }
 
         [HttpPut] //Bunun yerine HttpPost da kullanılabilir
+        [Route("UpdateCategory")]
         public IActionResult UpdateCategory(Category category)
         {
+            try
+            {
             _categoryService.Update(category);
             return Ok(category);
+            }
+            catch (System.Exception e)
+            {
+                return StatusCode(500, e.Message);
+            }
         }
     }
 }

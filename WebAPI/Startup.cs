@@ -15,6 +15,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WebAPI.Helper;
 
 namespace WebAPI
 {
@@ -31,12 +32,7 @@ namespace WebAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddSingleton<IProductService, ProductService>();
-            services.AddSingleton<IProductData, ProductData>();
-            services.AddSingleton<ICategoryService, CategoryService>();
-            services.AddSingleton<ICategoryData, CategoryData>();
-            services.AddSingleton<ISellerService, SellerService>();
-            services.AddSingleton<ISellerData, SellerData>();
+            services.DI();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
