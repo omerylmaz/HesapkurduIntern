@@ -12,7 +12,7 @@ namespace BusinessLogic.Base
         Product GetProduct(int id);
         void AddProduct(Product product);
         void RemoveProduct(Product product);
-        void RemoveProductById(int id);
+        Product RemoveProductById(int id);
         void Update(Product product);
     }
 }

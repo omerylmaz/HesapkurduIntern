@@ -12,7 +12,7 @@ namespace BusinessLogic.Base
         Seller GetSellerById(int id);
         void AddSeller(Seller seller);
         void RemoveSeller(Seller seller);
-        void RemoveSellerById(int id);
+        Seller RemoveSellerById(int id);
         void Update(Seller seller);
     }
 }
