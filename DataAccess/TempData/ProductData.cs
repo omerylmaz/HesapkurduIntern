@@ -8,10 +8,10 @@ using System.Text;
 //bu dal classlarında hep aynı işlevi gören metotlar yazıyorum ama bunun yerine abstract generic temel bir class kullanılsa ve IData yerine o abstract classtan inherit olunsa nasıl olur?
 namespace DataAccess.TempData
 {
-    public class ProductData:IProductData
+    public class ProductData : IProductData
     {
         private List<Product> _products;
-        private List<Seller> _sellers;
+        //private List<Seller> _sellers;
 
         public ProductData()
         {
@@ -30,7 +30,12 @@ namespace DataAccess.TempData
 
         public void Add(Product item)
         {
-            _products.Add(item);
+            Product p = GetItemById(item.Id);
+            if (p == null) _products.Add(item);
+            else
+            {
+                throw new Exception("This id exists");
+            }
         }
 
         public List<Product> GetAll()
@@ -44,18 +49,24 @@ namespace DataAccess.TempData
 
         public Product GetItemById(int id)
         {
-            return _products.Find(x => x.Id == id);
+            //Product p = _products.FirstOrDefault(x => x.Id == id);
+            //if (p == null) throw new KeyNotFoundException();
+            return _products.FirstOrDefault(x => x.Id == id); ;
         }
 
         public void Remove(Product item)
         {
+            Product p = GetItemById(item.Id);
             _products.Remove(item);
         }
 
-        public void RemoveItemById(int id)
+        public Product RemoveItemById(int id)
         {
-            Product c = GetItemById(id);
-            _products.Remove(c);
+            Product p = GetItemById(id);
+            if (p == null)
+                throw new KeyNotFoundException();
+            _products.Remove(p);
+            return p;
         }
 
         public void Update(Product item)
@@ -63,7 +74,7 @@ namespace DataAccess.TempData
             Product p;
             try
             {
-            p = GetItemById(item.Id);//update iteminin id si listedekinden farklı çıkarsa patlayabilir
+                p = GetItemById(item.Id);//update iteminin id si listedekinden farklı çıkarsa patlayabilir
             }
             catch (IndexOutOfRangeException e)
             {

@@ -40,9 +40,10 @@ namespace BusinessLogic.Services
             _sellerData.Remove(seller);
         }
 
-        public void RemoveSellerById(int id)
+        public Seller RemoveSellerById(int id)
         {
-            _sellerData.RemoveItemById(id);
+            Seller s = _sellerData.RemoveItemById(id);
+            return s;
         }
 
         public void Update(Seller seller)

@@ -35,9 +35,10 @@ namespace BusinessLogic.Services
             _categoryData.Remove(category);
         }
 
-        public void RemoveCategoryById(int id)
+        public Category RemoveCategoryById(int id)
         {
-            _categoryData.RemoveItemById(id);
+            Category c = _categoryData.RemoveItemById(id);
+            return c;
         }
 
         public void Update(Category category)

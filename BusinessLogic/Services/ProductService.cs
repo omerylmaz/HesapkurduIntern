@@ -40,9 +40,10 @@ namespace BusinessLogic.Services
             _productData.Remove(product);
         }
 
-        public void RemoveProductById(int id)
+        public Product RemoveProductById(int id)
         {
-            _productData.RemoveItemById(id);
+            Product p = _productData.RemoveItemById(id);
+            return p;
         }
 
         public void Update(Product product)
