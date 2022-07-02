@@ -2,6 +2,7 @@
 using Infrastructure.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 
 namespace WebAPI.Controllers
 {
@@ -10,9 +11,13 @@ namespace WebAPI.Controllers
     public class SellersController : ControllerBase
     {
         private ISellerService _sellerService;
-        public SellersController(ISellerService sellerService)
+        private ILogger<SellersController> _logger;
+
+        public SellersController(ISellerService sellerService, ILogger<SellersController> logger)
         {
             _sellerService = sellerService;
+            _logger = logger;
+
         }
 
         [HttpGet]
@@ -26,10 +31,10 @@ namespace WebAPI.Controllers
                     return NotFound();
 
                 return Ok(_sellerService.GetAllSellers());
-
             }
             catch (System.Exception e)
             {
+                _logger.LogError($"Sellers/GetAllSellers - There is an exception: {e.Message}");
                 return StatusCode(500, e.Message);
             }
         }
@@ -49,6 +54,7 @@ namespace WebAPI.Controllers
             }
             catch (System.Exception e)
             {
+                _logger.LogError($"Sellers/GetSellerById/{sellerId} - There is an exception: {e.Message}");
                 return StatusCode(500, e.Message);
             }
         }
@@ -68,6 +74,7 @@ namespace WebAPI.Controllers
             }
             catch (System.Exception e)
             {
+                _logger.LogError($"Sellers/GetSellersByRating/{rating} - There is an exception: {e.Message}");
                 return StatusCode(500, e.Message);
             }
         }
@@ -83,6 +90,7 @@ namespace WebAPI.Controllers
             }
             catch (System.Exception e)
             {
+                _logger.LogError($"Sellers/AddSeller - There is an exception: {e.Message}");
                 return StatusCode(500, e.Message);
             }
         }
@@ -98,6 +106,7 @@ namespace WebAPI.Controllers
             }
             catch (System.Exception e)
             {
+                _logger.LogError($"Sellers/RemoveSellerById/{sellerId} - There is an exception: {e.Message}");
                 return StatusCode(500, e.Message);
             }
         }
@@ -113,6 +122,7 @@ namespace WebAPI.Controllers
             }
             catch (System.Exception e)
             {
+                _logger.LogError($"Sellers/UpdateSeller - There is an exception: {e.Message}");
                 return StatusCode(500, e.Message);
             }
         }

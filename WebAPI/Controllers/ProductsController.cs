@@ -2,6 +2,7 @@
 using Infrastructure.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using System;
 
 namespace WebAPI.Controllers
@@ -11,9 +12,13 @@ namespace WebAPI.Controllers
     public class ProductsController : ControllerBase
     {
         private IProductService _productService;
-        public ProductsController(IProductService productService)
+        private ILogger<ProductsController> _logger;
+
+        public ProductsController(IProductService productService, ILogger<ProductsController> logger)
         {
             _productService = productService;
+            _logger = logger;
+
         }
 
         [HttpGet]
@@ -31,6 +36,7 @@ namespace WebAPI.Controllers
             }
             catch (System.Exception e)
             {
+                _logger.LogError($"Products/GetAllProducts - There is an exception: {e.Message}");
                 return StatusCode(500, e.Message);
             }
         }
@@ -50,6 +56,7 @@ namespace WebAPI.Controllers
             }
             catch (System.Exception e)
             {
+                _logger.LogError($"Products/GetProductById/{productId} - There is an exception: {e.Message}");
                 return StatusCode(500, e.Message);
             }
         }
@@ -65,6 +72,7 @@ namespace WebAPI.Controllers
             }
             catch (System.Exception e)
             {
+                _logger.LogError($"Products/AddProduct - There is an exception: {e.Message}");
                 return StatusCode(500, e.Message);
             }
         }
@@ -81,6 +89,7 @@ namespace WebAPI.Controllers
             }
             catch (System.Exception e)
             {
+                _logger.LogError($"Products/RemoveProductById/{productId} - There is an exception: {e.Message}");
                 return StatusCode(500, e.Message);
             }
         }
@@ -96,6 +105,7 @@ namespace WebAPI.Controllers
             }
             catch (System.Exception e)
             {
+                _logger.LogError($"Products/UpdateProduct - There is an exception: {e.Message}");
                 return StatusCode(500, e.Message);
             }
         }

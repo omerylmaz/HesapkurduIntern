@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Serilog;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,7 @@ namespace WebAPI
     {
         public static void Main(string[] args)
         {
+            Log.Logger = new LoggerConfiguration().WriteTo.File("Logs/log.txt").CreateLogger();
             CreateHostBuilder(args).Build().Run();
         }
 
@@ -21,7 +23,7 @@ namespace WebAPI
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
-                });
+                }).UseSerilog();
     }
 }
-//generic bir interface classtan implement ettiğim zaman addSingleton da hata alıyorum
+//Serilog
