@@ -1,0 +1,21 @@
+2022-07-02 13:19:47.534 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-02 13:19:47.558 +03:00 [INF] Hosting environment: Development
+2022-07-02 13:19:47.559 +03:00 [INF] Content root path: D:\Workspace\HesapkurduIntern\WebAPI
+2022-07-02 13:19:47.560 +03:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:44395/products/RemoveProductById?productId=10  
+2022-07-02 13:19:47.627 +03:00 [INF] Executing endpoint 'WebAPI.Controllers.ProductsController.RemoveProductById (WebAPI)'
+2022-07-02 13:19:47.680 +03:00 [INF] Route matched with {action = "RemoveProductById", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RemoveProductById(Int32) on controller WebAPI.Controllers.ProductsController (WebAPI).
+2022-07-02 13:19:47.722 +03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200
+2022-07-02 13:19:47.730 +03:00 [INF] Executed action WebAPI.Controllers.ProductsController.RemoveProductById (WebAPI) in 41.6431ms
+2022-07-02 13:19:47.731 +03:00 [INF] Executed endpoint 'WebAPI.Controllers.ProductsController.RemoveProductById (WebAPI)'
+2022-07-02 13:19:47.748 +03:00 [INF] Request finished in 192.5957ms 200 
+2022-07-02 14:02:38.886 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-02 14:02:38.914 +03:00 [INF] Hosting environment: Development
+2022-07-02 14:02:38.915 +03:00 [INF] Content root path: D:\Workspace\HesapkurduIntern\WebAPI
+2022-07-02 14:02:38.917 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44395/categories/getallcategories  
+2022-07-02 14:02:39.063 +03:00 [INF] Executing endpoint 'WebAPI.Controllers.CategoriesController.GetAllCategories (WebAPI)'
+2022-07-02 14:02:39.159 +03:00 [INF] Route matched with {action = "GetAllCategories", controller = "Categories"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllCategories() on controller WebAPI.Controllers.CategoriesController (WebAPI).
+2022-07-02 14:02:48.399 +03:00 [INF] adsfasdfasdafas
+2022-07-02 14:02:59.142 +03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Infrastructure.Models.Category, Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-07-02 14:02:59.228 +03:00 [INF] Executed action WebAPI.Controllers.CategoriesController.GetAllCategories (WebAPI) in 20054.8041ms
+2022-07-02 14:02:59.233 +03:00 [INF] Executed endpoint 'WebAPI.Controllers.CategoriesController.GetAllCategories (WebAPI)'
+2022-07-02 14:02:59.238 +03:00 [INF] Request finished in 20326.8552ms 200 application/json; charset=utf-8
