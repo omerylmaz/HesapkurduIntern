@@ -3,6 +3,7 @@ using Infrastructure.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Serilog;
 using System.Threading.Tasks;
 
 namespace WebAPI.Controllers
@@ -30,12 +31,14 @@ namespace WebAPI.Controllers
                     return NotFound();
 
                 _logger.LogInformation("Get method called successfully");
+                Log.ForContext<CategoriesController>().Information("denemedenemedeneme");
                 return Ok(_categoryService.GetAllCategories());
 
             }
             catch (System.Exception e)
             {
                 _logger.LogError($"Categories/GetAllCategories - There is an exception: {e.Message}");
+
                 return StatusCode(500, e.Message);
             }
         }

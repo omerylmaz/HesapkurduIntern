@@ -31,6 +31,7 @@ namespace WebAPI.Controllers
                 if (x == null)
                     return NotFound();
 
+                _logger.LogInformation("Get method called successfully");
                 return Ok(_productService.GetAllProducts());
 
             }
@@ -108,6 +109,14 @@ namespace WebAPI.Controllers
                 _logger.LogError($"Products/UpdateProduct - There is an exception: {e.Message}");
                 return StatusCode(500, e.Message);
             }
+        }
+
+        [HttpGet]
+        [Route("Deneme")]
+        public String Deneme()
+        {
+            throw new Exception("Not found");
+            return "askdfksadfj";
         }
 
     }

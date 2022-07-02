@@ -30,6 +30,7 @@ namespace WebAPI.Controllers
                 if (x == null)
                     return NotFound();
 
+                _logger.LogInformation($"Sellers/GetAllSellers called");
                 return Ok(_sellerService.GetAllSellers());
             }
             catch (System.Exception e)
