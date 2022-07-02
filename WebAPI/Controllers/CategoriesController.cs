@@ -2,6 +2,8 @@
 using Infrastructure.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using Serilog;
 using System.Threading.Tasks;
 
 namespace WebAPI.Controllers
@@ -11,8 +13,10 @@ namespace WebAPI.Controllers
     public class CategoriesController : ControllerBase
     {
         private ICategoryService _categoryService;
-        public CategoriesController(ICategoryService categoryService)
+        private ILogger<CategoriesController> _logger;
+        public CategoriesController(ICategoryService categoryService, ILogger<CategoriesController> logger)
         {
+            _logger = logger;
             _categoryService = categoryService;
         }
 
@@ -26,11 +30,15 @@ namespace WebAPI.Controllers
                 if (x == null)
                     return NotFound();
 
+                _logger.LogInformation("Get method called successfully");
+                Log.ForContext<CategoriesController>().Information("denemedenemedeneme");
                 return Ok(_categoryService.GetAllCategories());
 
             }
             catch (System.Exception e)
             {
+                _logger.LogError($"Categories/GetAllCategories - There is an exception: {e.Message}");
+
                 return StatusCode(500, e.Message);
             }
         }
@@ -50,6 +58,7 @@ namespace WebAPI.Controllers
             }
             catch (System.Exception e)
             {
+                _logger.LogError($"Categories/GetCategoryById/{categoryId} - There is an exception: {e.Message}");
                 return StatusCode(500, e.Message);
             }
         }
@@ -65,6 +74,7 @@ namespace WebAPI.Controllers
             }
             catch (System.Exception e)
             {
+                _logger.LogError($"Categories/AddCategory - There is an exception: {e.Message}");
                 return StatusCode(500, e.Message);
             }
         }
@@ -81,6 +91,7 @@ namespace WebAPI.Controllers
             }
             catch (System.Exception e)
             {
+                _logger.LogError($"Categories/RemoveCategoryById/{categoryId} - There is an exception: {e.Message}");
                 return StatusCode(500, e.Message);
             }
         }
@@ -96,6 +107,7 @@ namespace WebAPI.Controllers
             }
             catch (System.Exception e)
             {
+                _logger.LogError($"Categories/UpdateCategory - There is an exception: {e.Message}");
                 return StatusCode(500, e.Message);
             }
         }
