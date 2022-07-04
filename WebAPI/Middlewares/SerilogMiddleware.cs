@@ -33,25 +33,25 @@ namespace WebAPI.Middlewares
 
         private static ILogger Log;
         private readonly RequestLogLevel _level;
-        private readonly IWatchLog _hesapkurduWatch;
+        private readonly IWatchLog _appWatch;
         private readonly RequestDelegate _next;
 
-        public SerilogMiddleware(RequestDelegate next, RequestLogLevel level, ILogger logger, IWatchLog hesapkurduWatch)
+        public SerilogMiddleware(RequestDelegate next, RequestLogLevel level, ILogger logger, IWatchLog appWatch)
         {
             Log = logger ?? throw new NullReferenceException(nameof(ILogger));
             _next = next ?? throw new ArgumentNullException(nameof(next));
             _level = level;
-            _hesapkurduWatch = hesapkurduWatch;
+            _appWatch = appWatch;
         }
 
         public async Task Invoke(HttpContext httpContext)
         {
             if (httpContext == null) throw new ArgumentNullException(nameof(httpContext));
-            _hesapkurduWatch.Restart();
+            _appWatch.Restart();
             try
             {
                 await _next(httpContext);
-                _hesapkurduWatch.Stop();
+                _appWatch.Stop();
                 switch (_level)
                 {
                     case RequestLogLevel.OnlyErrors:
@@ -60,7 +60,7 @@ namespace WebAPI.Middlewares
                             if (statusCode > 399)
                             {
                                 var log = LogForErrorContext(httpContext);
-                                log.Write(LogEventLevel.Error, MessageTemplate, httpContext.Request.Method, httpContext.Request.Path, statusCode, _hesapkurduWatch.ElapsedMilliseconds);
+                                log.Write(LogEventLevel.Error, MessageTemplate, httpContext.Request.Method, httpContext.Request.Path, statusCode, _appWatch.ElapsedMilliseconds);
                             }
                         }
                         break;
@@ -71,7 +71,7 @@ namespace WebAPI.Middlewares
 
                             var log = level == LogEventLevel.Error ? LogForErrorContext(httpContext) : Log;
 
-                            log.Write(level, MessageTemplate, httpContext.Request.Method, httpContext.Request.Path, statusCode, _hesapkurduWatch.ElapsedMilliseconds);
+                            log.Write(level, MessageTemplate, httpContext.Request.Method, httpContext.Request.Path, statusCode, _appWatch.ElapsedMilliseconds);
                         }
                         break;
                 }
@@ -82,19 +82,19 @@ namespace WebAPI.Middlewares
             }
             finally
             {
-                if (_hesapkurduWatch.IsRunning) _hesapkurduWatch.Stop();
+                if (_appWatch.IsRunning) _appWatch.Stop();
             }
         }
 
         private bool LogException(HttpContext httpContext, Exception ex)
         {
-            if (_hesapkurduWatch.IsRunning)
+            if (_appWatch.IsRunning)
             {
-                _hesapkurduWatch.Stop();
+                _appWatch.Stop();
             }
 
             LogForErrorContext(httpContext)
-                .Error(ex, MessageTemplate, httpContext.Request.Method, httpContext.Request.Path, (int)HttpStatusCode.InternalServerError, _hesapkurduWatch.ElapsedMilliseconds);
+                .Error(ex, MessageTemplate, httpContext.Request.Method, httpContext.Request.Path, (int)HttpStatusCode.InternalServerError, _appWatch.ElapsedMilliseconds);
 
             return false;
         }

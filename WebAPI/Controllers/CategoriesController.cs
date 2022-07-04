@@ -31,7 +31,7 @@ namespace WebAPI.Controllers
                     return NotFound();
 
                 _logger.LogInformation("Get method called successfully");
-                Log.ForContext<CategoriesController>().Information("denemedenemedeneme");
+                //Log.ForContext<CategoriesController>().Information("denemedenemedeneme");
                 return Ok(_categoryService.GetAllCategories());
 
             }
