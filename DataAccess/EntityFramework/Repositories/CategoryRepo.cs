@@ -6,9 +6,9 @@ using System.Text;
 
 namespace DataAccess.EntityFramework.Repositories
 {
-    public class CategorytRepo : GenericRepository<Category>, ICategoryRepo
+    public class CategoryRepo : GenericRepository<Category>, ICategoryRepo
     {
-        public CategorytRepo(TrendkurduDbContext dbContext) : base(dbContext)
+        public CategoryRepo(TrendkurduDbContext dbContext) : base(dbContext)
         {
 
         }

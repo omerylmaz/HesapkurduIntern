@@ -21,4 +21,3 @@ namespace Infrastructure.Models
         public double Rating { get; set; }
     }
 }
-<
