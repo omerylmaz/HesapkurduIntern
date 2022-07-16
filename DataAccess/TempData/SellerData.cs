@@ -8,7 +8,7 @@ using System.Text;
 
 namespace DataAccess.TempData
 {
-    public class SellerData:ISellerData
+    public class SellerData:ISellerRepo
     {
         List<Seller> _sellers;
         public SellerData()

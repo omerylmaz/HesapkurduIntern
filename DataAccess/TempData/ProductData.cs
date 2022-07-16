@@ -8,7 +8,7 @@ using System.Text;
 //bu dal classlarında hep aynı işlevi gören metotlar yazıyorum ama bunun yerine abstract generic temel bir class kullanılsa ve IData yerine o abstract classtan inherit olunsa nasıl olur?
 namespace DataAccess.TempData
 {
-    public class ProductData : IProductData
+    public class ProductData : IProductRepo
     {
         private List<Product> _products;
         //private List<Seller> _sellers;

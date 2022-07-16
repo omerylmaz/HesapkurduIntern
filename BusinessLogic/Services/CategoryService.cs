@@ -10,40 +10,40 @@ namespace BusinessLogic.Services
 {
     public class CategoryService : ICategoryService
     {
-        private ICategoryData _categoryData;
-        public CategoryService(ICategoryData categoryData)
+        private ICategoryRepo _categoryRepo;
+        public CategoryService(ICategoryRepo categoryRepo)
         {
-            _categoryData = categoryData;
+            _categoryRepo = categoryRepo;
         }
         public void AddCategory(Category category)
         {
-            _categoryData.Add(category);
+            _categoryRepo.Add(category);
         }
 
         public List<Category> GetAllCategories()
         {
-            return _categoryData.GetAll();
+            return _categoryRepo.GetAll();
         }
 
         public Category GetCategory(int id)
         {
-            return _categoryData.GetItemById(id);
+            return _categoryRepo.GetItemById(id);
         }
 
         public void RemoveCategory(Category category)
         {
-            _categoryData.Remove(category);
+            _categoryRepo.Remove(category);
         }
 
         public Category RemoveCategoryById(int id)
         {
-            Category c = _categoryData.RemoveItemById(id);
+            Category c = _categoryRepo.RemoveItemById(id);
             return c;
         }
 
         public void Update(Category category)
         {
-            _categoryData.Update(category);
+            _categoryRepo.Update(category);
         }
     }
 }

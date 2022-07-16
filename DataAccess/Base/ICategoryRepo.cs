@@ -5,7 +5,7 @@ using System.Text;
 
 namespace DataAccess.Base
 {
-    public interface ICategoryData:IData<Category>
+    public interface ICategoryRepo:IRepository<Category>
     {
 
     }

@@ -1,20 +1,16 @@
-﻿using System;
+﻿using Models.Base;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace Infrastructure.Models
 {
-    public class Seller
+    public class Seller : BaseEntity
     {
-        [Key]
         [Required]
-        public int Id { get; set; }
-
-        [Required]
-        [StringLength(30)]
+        [StringLength(50)]
         public string Name { get; set; }
-
         [EmailAddress]
         public string Email { get; set; }
 
@@ -25,3 +21,4 @@ namespace Infrastructure.Models
         public double Rating { get; set; }
     }
 }
+<

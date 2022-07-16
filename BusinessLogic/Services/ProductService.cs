@@ -10,45 +10,45 @@ namespace BusinessLogic.Services
 {
     public class ProductService : IProductService
     {
-        private IProductData _productData;
-        public ProductService(IProductData productData)
+        private IProductRepo _productRepo;
+        public ProductService(IProductRepo productRepo)
         {
-            _productData = productData;
+            _productRepo = productRepo;
         }
         public void AddProduct(Product product)
         {
-            _productData.Add(product);
+            _productRepo.Add(product);
         }
 
         public List<Product> GetAllProducts()
         {
-            return _productData.GetAll();
+            return _productRepo.GetAll();
         }
 
         public Product GetProduct(int id)
         {
-            return _productData.GetItemById(id);
+            return _productRepo.GetItemById(id);
         }
 
         public IEnumerable<Product> GetProductsByCategoryId(int categoryId)
         {
-            return _productData.GetAll(p => p.CategoryId == categoryId);
+            return _productRepo.GetAll(p => p.CategoryId == categoryId);
         }
 
         public void RemoveProduct(Product product)
         {
-            _productData.Remove(product);
+            _productRepo.Remove(product);
         }
 
         public Product RemoveProductById(int id)
         {
-            Product p = _productData.RemoveItemById(id);
+            Product p = _productRepo.RemoveItemById(id);
             return p;
         }
 
         public void Update(Product product)
         {
-            _productData.Update(product);
+            _productRepo.Update(product);
         }
     }
 }

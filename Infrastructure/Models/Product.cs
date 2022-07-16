@@ -1,18 +1,15 @@
-﻿using System;
+﻿using Models.Base;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace Infrastructure.Models
 {
-    public class Product
+    public class Product : BaseEntity
     {
-        [Key]
-        [Required(ErrorMessage = "This field has to be filled")]
-        public int Id { get; set; }
-        
         [Required]
-        [StringLength(30)]
+        [StringLength(50)]
         public string Name { get; set; }
         public int CategoryId { get; set; }
         public int SellerId { get; set; }

@@ -11,11 +11,11 @@ namespace WebAPI.Helper
         public static void DI(this IServiceCollection services)
         {
             services.AddSingleton<IProductService, ProductService>();
-            services.AddSingleton<IProductData, ProductData>();
+            services.AddSingleton<IProductRepo, ProductData>();
             services.AddSingleton<ICategoryService, CategoryService>();
-            services.AddSingleton<ICategoryData, CategoryData>();
+            services.AddSingleton<ICategoryRepo, CategoryData>();
             services.AddSingleton<ISellerService, SellerService>();
-            services.AddSingleton<ISellerData, SellerData>();
+            services.AddSingleton<ISellerRepo, SellerData>();
         }
     }
 }
