@@ -10,7 +10,7 @@ namespace DataAccess.EntityFramework
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=WSHQIT030\SQLEXPRESS;Database=TrendKurdu;Trusted_Connection=true");
+            optionsBuilder.UseSqlServer(@"Server=(localdb)\WSHQIT030\SQLEXPRESS;Database=TrendKurdu;Trusted_Connection=true");
         }
 
         public DbSet<Product> Products { get; set; }
