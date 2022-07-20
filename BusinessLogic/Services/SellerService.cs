@@ -25,7 +25,7 @@ namespace BusinessLogic.Services
             return _sellerRepo.GetAll();
         }
 
-        public IEnumerable<Seller> GetSellersByRating(double rating)
+        public IEnumerable<Seller> GetSellersByRating(decimal rating)
         {
             return _sellerRepo.GetAll(p => p.Rating >= rating);
         }

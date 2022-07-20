@@ -8,9 +8,9 @@ namespace DataAccess.EntityFramework.Repositories
 {
     public class ProductRepo : GenericRepository<Product>, IProductRepo
     {
-        public ProductRepo(TrendkurduDbContext dbContext) : base(dbContext)
+        public ProductRepo()
         {
-
+            TrendkurduDbContext dbContext = new TrendkurduDbContext();
         }
     }
 }

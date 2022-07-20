@@ -8,7 +8,7 @@ namespace BusinessLogic.Base
     public interface ISellerService
     {
         List<Seller> GetAllSellers();
-        public IEnumerable<Seller> GetSellersByRating(double rating);
+        public IEnumerable<Seller> GetSellersByRating(decimal rating);
         Seller GetSellerById(int id);
         void AddSeller(Seller seller);
         void RemoveSeller(Seller seller);

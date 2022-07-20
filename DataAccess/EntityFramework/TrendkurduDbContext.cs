@@ -8,9 +8,13 @@ namespace DataAccess.EntityFramework
 {
     public class TrendkurduDbContext:DbContext
     {
+        //public TrendkurduDbContext(DbContextOptions<TrendkurduDbContext> options) : base(options)
+        //{
+
+        //}
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=(localdb)\WSHQIT030\SQLEXPRESS;Database=TrendKurdu;Trusted_Connection=true");
+            optionsBuilder.UseSqlServer(@"Server=WSHQIT030\SQLEXPRESS;Database=TrendKurdu;Trusted_Connection=True");
         }
 
         public DbSet<Product> Products { get; set; }

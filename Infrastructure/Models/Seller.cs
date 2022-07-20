@@ -18,6 +18,6 @@ namespace Infrastructure.Models
         public string PhoneNumber { get; set; }
 
         [Range(0, 10.0)]
-        public double Rating { get; set; }
+        public decimal Rating { get; set; }
     }
 }

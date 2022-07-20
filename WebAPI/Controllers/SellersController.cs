@@ -62,7 +62,7 @@ namespace WebAPI.Controllers
 
         [HttpGet]
         [Route("GetSellersByRating")]
-        public IActionResult GetSellersByRating(double rating)
+        public IActionResult GetSellersByRating(decimal rating)
         {
             var x = _sellerService.GetSellersByRating(rating);
 

@@ -18,7 +18,7 @@ namespace WebAPI.Helper
             services.AddSingleton<IProductRepo, ProductRepo>();
             services.AddSingleton<ICategoryService, CategoryService>();
             //services.AddSingleton<ICategoryRepo, CategoryData>();
-            //services.AddSingleton<ICategoryRepo, CategoryRepo>();
+            services.AddSingleton<ICategoryRepo, CategoryRepo>();
             services.AddSingleton<ISellerService, SellerService>();
             //services.AddSingleton<ISellerRepo, SellerData>();
             services.AddSingleton<ISellerRepo, SellerRepo>();
