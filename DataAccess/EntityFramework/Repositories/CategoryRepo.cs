@@ -10,7 +10,6 @@ namespace DataAccess.EntityFramework.Repositories
     {
         public CategoryRepo()
         {
-            TrendkurduDbContext dbContext = new TrendkurduDbContext();
         }
     }
 }

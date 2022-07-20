@@ -322,3 +322,12 @@ System.InvalidOperationException: Unable to resolve service for type 'WebAPI.Mid
 2022-07-19 21:42:09.383 +03:00 [INF] Get method called successfully
 2022-07-19 21:42:09.398 +03:00 [INF] HTTP GET /products/GetAllProducts responded 200 in 282.0000 ms
 2022-07-19 21:42:18.784 +03:00 [INF] HTTP DELETE /products/RemoveProductById responded 200 in 91.0000 ms
+2022-07-20 17:45:03.096 +03:00 [ERR] HTTP GET / responded 404 in 40.0000 ms
+2022-07-20 17:49:56.203 +03:00 [ERR] HTTP GET / responded 404 in 95.0000 ms
+2022-07-20 17:50:19.078 +03:00 [INF] Get method called successfully
+2022-07-20 17:50:19.231 +03:00 [INF] HTTP GET /products/GetAllProducts responded 200 in 9010.0000 ms
+2022-07-20 17:50:31.334 +03:00 [INF] Get method called successfully
+2022-07-20 17:50:31.345 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 114.0000 ms
+2022-07-20 17:51:49.181 +03:00 [ERR] HTTP GET / responded 404 in 44.0000 ms
+2022-07-20 17:52:27.562 +03:00 [INF] Get method called successfully
+2022-07-20 17:52:27.774 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 4552.0000 ms

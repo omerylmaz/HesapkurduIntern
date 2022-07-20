@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Models.Base
 {
-    public class BaseEntity : IEntity
+    public abstract class BaseEntity
     {
         [Key]
         [Required]
