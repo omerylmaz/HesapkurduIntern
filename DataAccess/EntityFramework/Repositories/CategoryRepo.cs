@@ -8,9 +8,8 @@ namespace DataAccess.EntityFramework.Repositories
 {
     public class CategoryRepo : GenericRepository<Category>, ICategoryRepo
     {
-        public CategoryRepo(TrendkurduDbContext dbContext) : base(dbContext)
+        public CategoryRepo()
         {
-
         }
     }
 }

@@ -18,9 +18,9 @@ namespace Infrastructure.Models
         public int Amount { get; set; }
 
         [Range (0,50000)]
-        public double Price { get; set; }
+        public decimal Price { get; set; }
 
         [Range(0,10.0)]
-        public double Rating { get; set; }
+        public decimal Rating { get; set; }
     }
 }

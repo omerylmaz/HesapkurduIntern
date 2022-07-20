@@ -110,14 +110,5 @@ namespace WebAPI.Controllers
                 return StatusCode(500, e.Message);
             }
         }
-
-        [HttpGet]
-        [Route("Deneme")]
-        public String Deneme()
-        {
-            throw new Exception("Not found");
-            return "askdfksadfj";
-        }
-
     }
 }
