@@ -35,6 +35,9 @@ namespace WebAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddCors(options =>
+     options.AddDefaultPolicy(builder =>
+     builder.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin()));
             services.DI();
         }
 
@@ -55,6 +58,8 @@ namespace WebAPI
             //app.UseMiddleware<SerilogMiddleware>();
 
             app.UseRouting();
+
+            app.UseCors();
 
             app.UseAuthorization();
 
