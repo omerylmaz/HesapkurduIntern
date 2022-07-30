@@ -173,3 +173,847 @@ System.InvalidOperationException: Unable to resolve service for type 'WebAPI.Mid
 2022-07-02 17:24:11.509 +03:00 [ERR] HTTP GET / responded 404 in 4726.0000 ms
 2022-07-02 17:24:39.115 +03:00 [INF] Get method called successfully
 2022-07-02 17:25:10.888 +03:00 [INF] HTTP GET /products/getallproducts responded 200 in 2355.0000 ms
+2022-07-16 23:15:27.236 +03:00 [ERR] HTTP GET / responded 404 in 17.0000 ms
+2022-07-16 23:15:44.562 +03:00 [ERR] HTTP GET /products/getall responded 404 in 8.0000 ms
+2022-07-16 23:16:07.945 +03:00 [INF] Get method called successfully
+2022-07-16 23:16:07.973 +03:00 [INF] HTTP GET /products/GetAllProducts responded 200 in 221.0000 ms
+2022-07-16 23:16:08.206 +03:00 [ERR] HTTP GET /favicon.ico responded 404 in 0.0000 ms
+2022-07-16 23:18:44.015 +03:00 [INF] Get method called successfully
+2022-07-16 23:18:44.019 +03:00 [INF] HTTP GET /categories/GetAllcategories responded 200 in 52.0000 ms
+2022-07-16 23:18:59.336 +03:00 [INF] Get method called successfully
+2022-07-16 23:18:59.339 +03:00 [INF] HTTP GET /categories/GetAllcategories responded 200 in 25.0000 ms
+2022-07-17 13:33:27.705 +03:00 [ERR] HTTP GET / responded 404 in 23.0000 ms
+2022-07-17 13:34:27.125 +03:00 [ERR] Categories/GetAllCategories - There is an exception: Object reference not set to an instance of an object.
+2022-07-17 13:34:27.147 +03:00 [ERR] HTTP GET /categories/getallcategories responded 500 in 51417.0000 ms
+2022-07-17 13:34:27.242 +03:00 [ERR] HTTP GET /favicon.ico responded 404 in 1.0000 ms
+2022-07-17 13:35:34.191 +03:00 [ERR] Categories/AddCategory - There is an exception: Object reference not set to an instance of an object.
+2022-07-17 13:35:34.202 +03:00 [ERR] HTTP POST /categories/addcategory responded 500 in 16621.0000 ms
+2022-07-17 13:37:55.825 +03:00 [ERR] HTTP GET / responded 404 in 69.0000 ms
+2022-07-17 13:40:18.850 +03:00 [ERR] HTTP GET / responded 404 in 21.0000 ms
+2022-07-17 13:41:58.017 +03:00 [ERR] Categories/AddCategory - There is an exception: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SNI_PN11, error: 50 - Local Database Runtime error occurred. Specified LocalDB instance name is invalid.
+)
+2022-07-17 13:41:58.060 +03:00 [ERR] HTTP POST /categories/addcategory responded 500 in 23735.0000 ms
+2022-07-17 13:42:23.625 +03:00 [ERR] HTTP GET / responded 404 in 37.0000 ms
+2022-07-17 13:42:51.753 +03:00 [ERR] Categories/AddCategory - There is an exception: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SNI_PN11, error: 50 - Local Database Runtime error occurred. Specified LocalDB instance name is invalid.
+)
+2022-07-17 13:42:51.793 +03:00 [ERR] HTTP POST /categories/addcategory responded 500 in 22677.0000 ms
+2022-07-17 13:48:03.032 +03:00 [ERR] HTTP GET / responded 404 in 44.0000 ms
+2022-07-17 13:48:19.635 +03:00 [ERR] Categories/AddCategory - There is an exception: Instance failure.
+2022-07-17 13:48:19.663 +03:00 [ERR] HTTP POST /categories/addcategory responded 500 in 9271.0000 ms
+2022-07-17 13:50:02.226 +03:00 [ERR] HTTP GET / responded 404 in 50.0000 ms
+2022-07-17 14:07:37.461 +03:00 [ERR] HTTP GET / responded 404 in 39.0000 ms
+2022-07-17 14:09:51.043 +03:00 [ERR] Categories/GetAllCategories - There is an exception: Instance failure.
+2022-07-17 14:09:51.063 +03:00 [ERR] HTTP GET /categories/getallcategories responded 500 in 4270.0000 ms
+2022-07-17 14:15:10.708 +03:00 [ERR] HTTP GET / responded 404 in 114.0000 ms
+2022-07-17 14:15:23.102 +03:00 [ERR] Categories/GetAllCategories - There is an exception: Instance failure.
+2022-07-17 14:15:23.170 +03:00 [ERR] HTTP GET /categories/getallcategories responded 500 in 3908.0000 ms
+2022-07-17 14:15:32.956 +03:00 [ERR] Categories/GetAllCategories - There is an exception: Instance failure.
+2022-07-17 14:15:32.972 +03:00 [ERR] HTTP GET /categories/getallcategories responded 500 in 203.0000 ms
+2022-07-17 14:15:33.429 +03:00 [ERR] HTTP GET /favicon.ico responded 404 in 0.0000 ms
+2022-07-17 14:16:50.254 +03:00 [ERR] HTTP GET / responded 404 in 44.0000 ms
+2022-07-17 14:16:58.843 +03:00 [INF] Get method called successfully
+2022-07-17 14:16:58.951 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 4522.0000 ms
+2022-07-17 14:17:15.097 +03:00 [INF] HTTP POST /categories/addcategory responded 201 in 4154.0000 ms
+2022-07-17 14:17:24.730 +03:00 [INF] Get method called successfully
+2022-07-17 14:17:24.743 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 16.0000 ms
+2022-07-18 00:31:52.620 +03:00 [ERR] HTTP GET / responded 404 in 34.0000 ms
+2022-07-18 00:43:45.611 +03:00 [ERR] Categories/AddCategory - There is an exception: An error occurred while updating the entries. See the inner exception for details.
+2022-07-18 00:43:45.627 +03:00 [ERR] HTTP POST /categories/addcategory responded 500 in 7514.0000 ms
+2022-07-18 00:44:40.189 +03:00 [ERR] Categories/AddCategory - There is an exception: An error occurred while updating the entries. See the inner exception for details.
+2022-07-18 00:44:40.205 +03:00 [ERR] HTTP POST /categories/addcategory responded 500 in 35116.0000 ms
+2022-07-18 00:44:49.214 +03:00 [INF] HTTP POST /categories/addcategory responded 201 in 2123.0000 ms
+2022-07-18 00:44:55.069 +03:00 [INF] Get method called successfully
+2022-07-18 00:44:55.085 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 405.0000 ms
+2022-07-18 00:45:51.322 +03:00 [ERR] HTTP GET / responded 404 in 21.0000 ms
+2022-07-18 00:46:54.377 +03:00 [ERR] HTTP GET / responded 404 in 22.0000 ms
+2022-07-18 00:47:10.803 +03:00 [INF] Get method called successfully
+2022-07-18 00:47:13.355 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 8241.0000 ms
+2022-07-19 20:24:13.723 +03:00 [ERR] HTTP GET / responded 404 in 105.0000 ms
+2022-07-19 20:44:02.933 +03:00 [ERR] HTTP GET / responded 404 in 0.0000 ms
+2022-07-19 20:44:28.232 +03:00 [INF] Get method called successfully
+2022-07-19 20:44:28.278 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 9325.0000 ms
+2022-07-19 20:45:26.930 +03:00 [ERR] HTTP GET / responded 404 in 20.0000 ms
+2022-07-19 20:47:47.078 +03:00 [ERR] HTTP GET / responded 404 in 20.0000 ms
+2022-07-19 20:48:10.858 +03:00 [INF] HTTP GET /categories/getcategorybyid responded 200 in 12327.0000 ms
+2022-07-19 20:48:53.409 +03:00 [INF] Get method called successfully
+2022-07-19 20:48:53.417 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 36.0000 ms
+2022-07-19 20:49:11.134 +03:00 [INF] HTTP POST /categories/addcategory responded 201 in 270.0000 ms
+2022-07-19 20:49:15.464 +03:00 [INF] Get method called successfully
+2022-07-19 20:49:15.470 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 8.0000 ms
+2022-07-19 20:49:26.461 +03:00 [INF] HTTP POST /categories/addcategory responded 201 in 30.0000 ms
+2022-07-19 20:49:47.434 +03:00 [INF] HTTP DELETE /categories/RemoveCategoryById responded 200 in 6116.0000 ms
+2022-07-19 20:49:55.823 +03:00 [INF] HTTP PUT /categories/updatecategory responded 200 in 24.0000 ms
+2022-07-19 20:50:00.480 +03:00 [INF] Get method called successfully
+2022-07-19 20:50:00.492 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 17.0000 ms
+2022-07-19 20:50:12.208 +03:00 [INF] Get method called successfully
+2022-07-19 20:50:12.214 +03:00 [INF] HTTP GET /products/GetAllProducts responded 200 in 34.0000 ms
+2022-07-19 20:51:33.686 +03:00 [ERR] Products/AddProduct - There is an exception: An error occurred while updating the entries. See the inner exception for details.
+2022-07-19 20:51:33.699 +03:00 [ERR] HTTP POST /products/addproduct responded 500 in 249.0000 ms
+2022-07-19 20:52:55.787 +03:00 [ERR] Products/AddProduct - There is an exception: An error occurred while updating the entries. See the inner exception for details.
+2022-07-19 20:52:55.799 +03:00 [ERR] HTTP POST /products/addproduct responded 500 in 36558.0000 ms
+2022-07-19 20:54:09.586 +03:00 [INF] HTTP POST /sellers/addseller responded 201 in 5868.0000 ms
+2022-07-19 20:54:27.039 +03:00 [INF] HTTP POST /sellers/addseller responded 201 in 1949.0000 ms
+2022-07-19 20:54:35.586 +03:00 [ERR] Sellers/GetAllSellers - There is an exception: Unable to cast object of type 'System.Decimal' to type 'System.Double'.
+2022-07-19 20:54:35.589 +03:00 [ERR] HTTP GET /sellers/getallsellers responded 500 in 62.0000 ms
+2022-07-19 20:56:16.685 +03:00 [ERR] HTTP GET / responded 404 in 18.0000 ms
+2022-07-19 20:56:26.926 +03:00 [INF] Sellers/GetAllSellers called
+2022-07-19 20:56:26.953 +03:00 [INF] HTTP GET /sellers/getallsellers responded 200 in 1347.0000 ms
+2022-07-19 20:56:43.850 +03:00 [INF] HTTP GET /sellers/getsellerbyid responded 200 in 120.0000 ms
+2022-07-19 20:56:52.202 +03:00 [INF] HTTP GET /sellers/getsellersbyrating responded 200 in 77.0000 ms
+2022-07-19 20:57:03.282 +03:00 [INF] HTTP PUT /sellers/UpdateSeller responded 200 in 210.0000 ms
+2022-07-19 20:57:17.061 +03:00 [INF] Sellers/GetAllSellers called
+2022-07-19 20:57:17.068 +03:00 [INF] HTTP GET /sellers/getallsellers responded 200 in 17.0000 ms
+2022-07-19 20:57:34.504 +03:00 [ERR] Sellers/RemoveSellerById/1 - There is an exception: The instance of entity type 'Seller' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+2022-07-19 20:57:34.511 +03:00 [ERR] HTTP DELETE /sellers/RemoveSellerById responded 500 in 109.0000 ms
+2022-07-19 20:57:57.860 +03:00 [ERR] Sellers/RemoveSellerById/0 - There is an exception: Value cannot be null. (Parameter 'entity')
+2022-07-19 20:57:57.867 +03:00 [ERR] HTTP DELETE /sellers/RemoveSellerById responded 500 in 46.0000 ms
+2022-07-19 20:59:21.888 +03:00 [ERR] Sellers/RemoveSellerById/0 - There is an exception: Value cannot be null. (Parameter 'entity')
+2022-07-19 20:59:21.892 +03:00 [ERR] HTTP DELETE /sellers/RemoveSellerById responded 500 in 48.0000 ms
+2022-07-19 21:00:35.876 +03:00 [ERR] Sellers/RemoveSellerById/0 - There is an exception: Value cannot be null. (Parameter 'entity')
+2022-07-19 21:00:35.886 +03:00 [ERR] HTTP DELETE /sellers/RemoveSellerById responded 500 in 46.0000 ms
+2022-07-19 21:00:44.923 +03:00 [ERR] Sellers/RemoveSellerById/0 - There is an exception: Value cannot be null. (Parameter 'entity')
+2022-07-19 21:00:44.931 +03:00 [ERR] HTTP DELETE /sellers/RemoveSellerById responded 500 in 37.0000 ms
+2022-07-19 21:01:35.420 +03:00 [ERR] Sellers/RemoveSellerById/0 - There is an exception: Value cannot be null. (Parameter 'entity')
+2022-07-19 21:01:35.427 +03:00 [ERR] HTTP DELETE /sellers/RemoveSellerById responded 500 in 11593.0000 ms
+2022-07-19 21:01:56.015 +03:00 [ERR] Sellers/RemoveSellerById/1 - There is an exception: The instance of entity type 'Seller' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+2022-07-19 21:01:56.019 +03:00 [ERR] HTTP DELETE /sellers/RemoveSellerById responded 500 in 3732.0000 ms
+2022-07-19 21:07:05.560 +03:00 [ERR] Sellers/RemoveSellerById/1 - There is an exception: The instance of entity type 'Seller' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+2022-07-19 21:07:05.616 +03:00 [ERR] HTTP DELETE /sellers/RemoveSellerById responded 500 in 243968.0000 ms
+2022-07-19 21:07:19.096 +03:00 [INF] Get method called successfully
+2022-07-19 21:07:19.102 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 40.0000 ms
+2022-07-19 21:07:29.702 +03:00 [INF] HTTP PUT /categories/updatecategory responded 200 in 38.0000 ms
+2022-07-19 21:07:41.327 +03:00 [ERR] Categories/RemoveCategoryById/2 - There is an exception: The instance of entity type 'Category' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+2022-07-19 21:07:41.330 +03:00 [ERR] HTTP DELETE /categories/RemoveCategoryById responded 500 in 2352.0000 ms
+2022-07-19 21:19:08.768 +03:00 [ERR] HTTP GET / responded 404 in 22.0000 ms
+2022-07-19 21:19:16.709 +03:00 [INF] Get method called successfully
+2022-07-19 21:19:16.758 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 1398.0000 ms
+2022-07-19 21:19:31.187 +03:00 [INF] HTTP PUT /categories/updatecategory responded 200 in 257.0000 ms
+2022-07-19 21:19:35.513 +03:00 [INF] HTTP DELETE /categories/RemoveCategoryById responded 200 in 92.0000 ms
+2022-07-19 21:19:39.608 +03:00 [INF] Get method called successfully
+2022-07-19 21:19:39.618 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 17.0000 ms
+2022-07-19 21:19:55.142 +03:00 [INF] HTTP DELETE /sellers/RemoveSellerById responded 200 in 5302.0000 ms
+2022-07-19 21:20:22.102 +03:00 [ERR] Products/AddProduct - There is an exception: An error occurred while updating the entries. See the inner exception for details.
+2022-07-19 21:20:22.107 +03:00 [ERR] HTTP POST /products/addproduct responded 500 in 127.0000 ms
+2022-07-19 21:21:17.967 +03:00 [INF] HTTP POST /categories/addcategory responded 201 in 24.0000 ms
+2022-07-19 21:21:24.485 +03:00 [INF] Get method called successfully
+2022-07-19 21:21:24.489 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 8.0000 ms
+2022-07-19 21:21:38.501 +03:00 [ERR] Products/AddProduct - There is an exception: An error occurred while updating the entries. See the inner exception for details.
+2022-07-19 21:21:38.506 +03:00 [ERR] HTTP POST /products/addproduct responded 500 in 51.0000 ms
+2022-07-19 21:21:46.882 +03:00 [INF] Sellers/GetAllSellers called
+2022-07-19 21:21:46.887 +03:00 [INF] HTTP GET /sellers/getallsellers responded 200 in 18.0000 ms
+2022-07-19 21:22:00.510 +03:00 [INF] HTTP POST /products/addproduct responded 201 in 22.0000 ms
+2022-07-19 21:22:14.229 +03:00 [ERR] Products/GetAllProducts - There is an exception: Unable to cast object of type 'System.Decimal' to type 'System.Double'.
+2022-07-19 21:22:14.233 +03:00 [ERR] HTTP GET /products/GetAllProducts responded 500 in 70.0000 ms
+2022-07-19 21:27:28.536 +03:00 [ERR] HTTP GET / responded 404 in 39.0000 ms
+2022-07-19 21:28:14.194 +03:00 [ERR] HTTP GET / responded 404 in 19.0000 ms
+2022-07-19 21:29:46.251 +03:00 [INF] Get method called successfully
+2022-07-19 21:29:46.302 +03:00 [INF] HTTP GET /products/GetAllProducts responded 200 in 1402.0000 ms
+2022-07-19 21:30:19.674 +03:00 [INF] HTTP POST /products/addproduct responded 201 in 286.0000 ms
+2022-07-19 21:30:33.451 +03:00 [INF] HTTP POST /products/addproduct responded 201 in 19.0000 ms
+2022-07-19 21:30:39.151 +03:00 [INF] Get method called successfully
+2022-07-19 21:30:39.162 +03:00 [INF] HTTP GET /products/GetAllProducts responded 200 in 16.0000 ms
+2022-07-19 21:30:48.197 +03:00 [ERR] HTTP GET /products/GetProductById responded 404 in 96.0000 ms
+2022-07-19 21:30:58.720 +03:00 [INF] HTTP GET /products/GetProductById responded 200 in 12.0000 ms
+2022-07-19 21:31:15.825 +03:00 [ERR] Products/UpdateProduct - There is an exception: An error occurred while updating the entries. See the inner exception for details.
+2022-07-19 21:31:15.833 +03:00 [ERR] HTTP PUT /products/updateproduct responded 500 in 119.0000 ms
+2022-07-19 21:35:53.239 +03:00 [ERR] HTTP GET / responded 404 in 18.0000 ms
+2022-07-19 21:40:23.267 +03:00 [ERR] HTTP GET / responded 404 in 17.0000 ms
+2022-07-19 21:41:36.371 +03:00 [INF] HTTP PUT /products/updateproduct responded 200 in 10338.0000 ms
+2022-07-19 21:42:09.383 +03:00 [INF] Get method called successfully
+2022-07-19 21:42:09.398 +03:00 [INF] HTTP GET /products/GetAllProducts responded 200 in 282.0000 ms
+2022-07-19 21:42:18.784 +03:00 [INF] HTTP DELETE /products/RemoveProductById responded 200 in 91.0000 ms
+2022-07-20 17:45:03.096 +03:00 [ERR] HTTP GET / responded 404 in 40.0000 ms
+2022-07-20 17:49:56.203 +03:00 [ERR] HTTP GET / responded 404 in 95.0000 ms
+2022-07-20 17:50:19.078 +03:00 [INF] Get method called successfully
+2022-07-20 17:50:19.231 +03:00 [INF] HTTP GET /products/GetAllProducts responded 200 in 9010.0000 ms
+2022-07-20 17:50:31.334 +03:00 [INF] Get method called successfully
+2022-07-20 17:50:31.345 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 114.0000 ms
+2022-07-20 17:51:49.181 +03:00 [ERR] HTTP GET / responded 404 in 44.0000 ms
+2022-07-20 17:52:27.562 +03:00 [INF] Get method called successfully
+2022-07-20 17:52:27.774 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 4552.0000 ms
+2022-07-20 17:57:55.196 +03:00 [ERR] HTTP GET / responded 404 in 42.0000 ms
+2022-07-20 17:58:52.051 +03:00 [INF] Get method called successfully
+2022-07-20 17:58:52.166 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 4374.0000 ms
+2022-07-21 13:31:26.086 +03:00 [ERR] HTTP GET / responded 404 in 63.0000 ms
+2022-07-21 13:31:46.638 +03:00 [INF] Get method called successfully
+2022-07-21 13:31:46.772 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 5264.0000 ms
+2022-07-21 13:32:17.560 +03:00 [INF] HTTP POST /categories/addcategory responded 201 in 587.0000 ms
+2022-07-21 13:32:26.125 +03:00 [INF] Get method called successfully
+2022-07-21 13:32:26.187 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 76.0000 ms
+2022-07-21 13:32:39.532 +03:00 [ERR] Categories/RemoveCategoryById/3 - There is an exception: An error occurred while updating the entries. See the inner exception for details.
+2022-07-21 13:32:39.544 +03:00 [ERR] HTTP DELETE /categories/RemoveCategoryById responded 500 in 521.0000 ms
+2022-07-21 13:33:22.037 +03:00 [ERR] Categories/RemoveCategoryById/3 - There is an exception: An error occurred while updating the entries. See the inner exception for details.
+2022-07-21 13:33:22.047 +03:00 [ERR] HTTP DELETE /categories/RemoveCategoryById responded 500 in 148.0000 ms
+2022-07-21 13:33:33.734 +03:00 [ERR] Categories/RemoveCategoryById/3 - There is an exception: An error occurred while updating the entries. See the inner exception for details.
+2022-07-21 13:33:33.765 +03:00 [ERR] HTTP DELETE /categories/RemoveCategoryById responded 500 in 81.0000 ms
+2022-07-21 13:34:47.856 +03:00 [ERR] Categories/RemoveCategoryById/3 - There is an exception: An error occurred while updating the entries. See the inner exception for details.
+2022-07-21 13:34:47.870 +03:00 [ERR] HTTP DELETE /categories/RemoveCategoryById responded 500 in 43071.0000 ms
+2022-07-21 13:35:08.683 +03:00 [INF] HTTP DELETE /categories/RemoveCategoryById responded 200 in 2904.0000 ms
+2022-07-21 13:35:21.069 +03:00 [INF] HTTP PUT /categories/updatecategory responded 200 in 48.0000 ms
+2022-07-21 13:35:24.379 +03:00 [INF] Get method called successfully
+2022-07-21 13:35:24.405 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 38.0000 ms
+2022-07-21 13:49:07.706 +03:00 [ERR] HTTP GET / responded 404 in 39.0000 ms
+2022-07-21 13:49:07.801 +03:00 [ERR] HTTP GET / responded 404 in 0.0000 ms
+2022-07-21 13:49:25.872 +03:00 [WRN] No type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-07-21 13:49:25.877 +03:00 [WRN] No type was specified for the decimal property 'Rating' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-07-21 13:49:25.882 +03:00 [WRN] No type was specified for the decimal property 'Rating' on entity type 'Seller'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-07-21 13:49:27.249 +03:00 [INF] Get method called successfully
+2022-07-21 13:49:27.288 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 2699.0000 ms
+2022-07-21 13:49:39.460 +03:00 [INF] HTTP POST /categories/addcategory responded 201 in 450.0000 ms
+2022-07-21 13:49:42.292 +03:00 [INF] Get method called successfully
+2022-07-21 13:49:42.298 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 42.0000 ms
+2022-07-21 13:49:53.147 +03:00 [INF] HTTP DELETE /categories/RemoveCategoryById responded 200 in 145.0000 ms
+2022-07-21 13:49:57.665 +03:00 [INF] Get method called successfully
+2022-07-21 13:49:57.689 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 36.0000 ms
+2022-07-25 00:27:06.968 +03:00 [ERR] HTTP GET / responded 404 in 23.0000 ms
+2022-07-25 00:28:25.386 +03:00 [ERR] HTTP GET / responded 404 in 22.0000 ms
+2022-07-25 00:28:56.383 +03:00 [ERR] HTTP GET / responded 404 in 26.0000 ms
+2022-07-25 00:30:26.149 +03:00 [WRN] No type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-07-25 00:30:26.153 +03:00 [WRN] No type was specified for the decimal property 'Rating' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-07-25 00:30:26.156 +03:00 [WRN] No type was specified for the decimal property 'Rating' on entity type 'Seller'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-07-25 00:30:27.990 +03:00 [INF] Get method called successfully
+2022-07-25 00:30:28.019 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 3413.0000 ms
+2022-07-25 00:30:28.384 +03:00 [ERR] HTTP GET /favicon.ico responded 404 in 1.0000 ms
+2022-07-25 00:30:39.644 +03:00 [INF] Get method called successfully
+2022-07-25 00:30:39.653 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 74.0000 ms
+2022-07-25 00:41:13.612 +03:00 [INF] Get method called successfully
+2022-07-25 00:41:13.618 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 45.0000 ms
+2022-07-25 00:41:42.557 +03:00 [INF] Get method called successfully
+2022-07-25 00:41:42.566 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 16.0000 ms
+2022-07-25 01:14:35.582 +03:00 [INF] Get method called successfully
+2022-07-25 01:14:35.587 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 19.0000 ms
+2022-07-25 01:16:59.564 +03:00 [INF] Get method called successfully
+2022-07-25 01:16:59.576 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 19.0000 ms
+2022-07-25 01:22:46.096 +03:00 [INF] Get method called successfully
+2022-07-25 01:22:46.104 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 27.0000 ms
+2022-07-25 01:24:17.562 +03:00 [INF] Get method called successfully
+2022-07-25 01:24:17.567 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 16.0000 ms
+2022-07-25 13:36:48.295 +03:00 [ERR] HTTP GET / responded 404 in 37.0000 ms
+2022-07-25 13:36:58.498 +03:00 [WRN] No type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-07-25 13:36:58.501 +03:00 [WRN] No type was specified for the decimal property 'Rating' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-07-25 13:36:58.503 +03:00 [WRN] No type was specified for the decimal property 'Rating' on entity type 'Seller'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-07-25 13:37:00.170 +03:00 [INF] Get method called successfully
+2022-07-25 13:37:00.198 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 2913.0000 ms
+2022-07-25 13:38:28.507 +03:00 [INF] Get method called successfully
+2022-07-25 13:38:28.514 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 93.0000 ms
+2022-07-25 13:53:55.439 +03:00 [INF] Get method called successfully
+2022-07-25 13:53:55.443 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 29.0000 ms
+2022-07-25 13:54:29.397 +03:00 [INF] Get method called successfully
+2022-07-25 13:54:29.431 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 41.0000 ms
+2022-07-25 13:54:48.722 +03:00 [INF] Get method called successfully
+2022-07-25 13:54:48.729 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 10.0000 ms
+2022-07-25 13:55:23.294 +03:00 [INF] Get method called successfully
+2022-07-25 13:55:23.299 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 9.0000 ms
+2022-07-25 14:02:32.919 +03:00 [INF] HTTP GET /categories/getcategorybyid responded 200 in 230.0000 ms
+2022-07-25 14:02:35.567 +03:00 [INF] HTTP GET /categories/getcategorybyid responded 200 in 12.0000 ms
+2022-07-25 14:03:24.417 +03:00 [INF] HTTP GET /categories/getcategorybyid responded 200 in 16.0000 ms
+2022-07-25 14:03:27.398 +03:00 [INF] HTTP GET /categories/getcategorybyid responded 200 in 9.0000 ms
+2022-07-25 14:03:36.545 +03:00 [INF] HTTP GET /categories/getcategorybyid responded 200 in 12.0000 ms
+2022-07-25 14:03:59.896 +03:00 [INF] HTTP GET /categories/getcategorybyid responded 200 in 9.0000 ms
+2022-07-25 14:08:58.460 +03:00 [INF] HTTP GET /categories/getcategorybyid responded 200 in 19.0000 ms
+2022-07-25 14:09:04.266 +03:00 [INF] HTTP GET /categories/getcategorybyid responded 200 in 12.0000 ms
+2022-07-25 14:10:20.343 +03:00 [INF] HTTP GET /categories/getcategorybyid responded 200 in 12.0000 ms
+2022-07-25 14:10:27.811 +03:00 [INF] HTTP OPTIONS /categories/RemoveCategoryById responded 204 in 1.0000 ms
+2022-07-25 14:10:28.048 +03:00 [ERR] Failed executing DbCommand (30ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Categories]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+2022-07-25 14:10:28.255 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'DataAccess.EntityFramework.TrendkurduDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_Products_Categories". The conflict occurred in database "TrendKurdu", table "dbo.Products", column 'CategoryId'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:9c8b7df9-ed4d-4f6c-a699-5c7275a07da9
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_Products_Categories". The conflict occurred in database "TrendKurdu", table "dbo.Products", column 'CategoryId'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:9c8b7df9-ed4d-4f6c-a699-5c7275a07da9
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2022-07-25 14:10:28.359 +03:00 [ERR] Categories/RemoveCategoryById/3 - There is an exception: An error occurred while updating the entries. See the inner exception for details.
+2022-07-25 14:10:28.373 +03:00 [ERR] HTTP DELETE /categories/RemoveCategoryById responded 500 in 549.0000 ms
+2022-07-25 14:12:01.084 +03:00 [INF] HTTP GET /categories/getcategorybyid responded 200 in 11.0000 ms
+2022-07-25 14:12:03.562 +03:00 [INF] HTTP OPTIONS /categories/RemoveCategoryById responded 204 in 0.0000 ms
+2022-07-25 14:12:03.590 +03:00 [ERR] Failed executing DbCommand (4ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Categories]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+2022-07-25 14:12:03.595 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'DataAccess.EntityFramework.TrendkurduDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_Products_Categories". The conflict occurred in database "TrendKurdu", table "dbo.Products", column 'CategoryId'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:9c8b7df9-ed4d-4f6c-a699-5c7275a07da9
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_Products_Categories". The conflict occurred in database "TrendKurdu", table "dbo.Products", column 'CategoryId'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:9c8b7df9-ed4d-4f6c-a699-5c7275a07da9
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2022-07-25 14:12:03.644 +03:00 [ERR] Categories/RemoveCategoryById/3 - There is an exception: An error occurred while updating the entries. See the inner exception for details.
+2022-07-25 14:12:03.648 +03:00 [ERR] HTTP DELETE /categories/RemoveCategoryById responded 500 in 70.0000 ms
+2022-07-25 14:29:18.184 +03:00 [ERR] HTTP GET /categories/RemoveCategoryById responded 405 in 0.0000 ms
+2022-07-25 14:29:40.728 +03:00 [ERR] HTTP GET /categories/RemoveCategoryById responded 405 in 0.0000 ms
+2022-07-25 15:05:40.787 +03:00 [ERR] Failed executing DbCommand (5ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Categories]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+2022-07-25 15:05:40.793 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'DataAccess.EntityFramework.TrendkurduDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_Products_Categories". The conflict occurred in database "TrendKurdu", table "dbo.Products", column 'CategoryId'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:54203865-a28d-4b83-9609-dde33161af15
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_Products_Categories". The conflict occurred in database "TrendKurdu", table "dbo.Products", column 'CategoryId'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:54203865-a28d-4b83-9609-dde33161af15
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2022-07-25 15:05:40.868 +03:00 [ERR] Categories/RemoveCategoryById/3 - There is an exception: An error occurred while updating the entries. See the inner exception for details.
+2022-07-25 15:05:40.879 +03:00 [ERR] HTTP DELETE /categories/RemoveCategoryById responded 500 in 133.0000 ms
+2022-07-25 15:06:30.198 +03:00 [INF] HTTP OPTIONS /categories/RemoveCategoryById responded 204 in 2.0000 ms
+2022-07-25 15:06:38.795 +03:00 [ERR] Failed executing DbCommand (3ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Categories]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+2022-07-25 15:06:38.799 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'DataAccess.EntityFramework.TrendkurduDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_Products_Categories". The conflict occurred in database "TrendKurdu", table "dbo.Products", column 'CategoryId'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:54203865-a28d-4b83-9609-dde33161af15
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_Products_Categories". The conflict occurred in database "TrendKurdu", table "dbo.Products", column 'CategoryId'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:54203865-a28d-4b83-9609-dde33161af15
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2022-07-25 15:07:16.752 +03:00 [ERR] Categories/RemoveCategoryById/3 - There is an exception: An error occurred while updating the entries. See the inner exception for details.
+2022-07-25 15:07:16.783 +03:00 [ERR] HTTP DELETE /categories/RemoveCategoryById responded 500 in 7.0000 ms
+2022-07-25 15:07:16.917 +03:00 [INF] HTTP POST /categories/addcategory responded 201 in 7.0000 ms
+2022-07-25 15:07:27.302 +03:00 [INF] HTTP POST /categories/addcategory responded 201 in 16.0000 ms
+2022-07-25 15:07:38.401 +03:00 [INF] Get method called successfully
+2022-07-25 15:07:38.407 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 8.0000 ms
+2022-07-25 15:07:45.556 +03:00 [INF] HTTP GET /categories/getcategorybyid responded 200 in 8.0000 ms
+2022-07-25 15:07:47.894 +03:00 [INF] HTTP OPTIONS /categories/RemoveCategoryById responded 204 in 0.0000 ms
+2022-07-25 15:07:50.154 +03:00 [INF] HTTP DELETE /categories/RemoveCategoryById responded 200 in 2254.0000 ms
+2022-07-25 18:24:05.337 +03:00 [ERR] HTTP GET /categories/getcategorybyid responded 404 in 65.0000 ms
+2022-07-26 00:05:41.943 +03:00 [ERR] HTTP GET / responded 404 in 46.0000 ms
+2022-07-26 00:05:53.989 +03:00 [WRN] No type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-07-26 00:05:53.994 +03:00 [WRN] No type was specified for the decimal property 'Rating' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-07-26 00:05:53.997 +03:00 [WRN] No type was specified for the decimal property 'Rating' on entity type 'Seller'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-07-26 00:05:57.226 +03:00 [INF] Get method called successfully
+2022-07-26 00:05:57.262 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 5488.0000 ms
+2022-07-26 00:05:59.643 +03:00 [ERR] HTTP GET /categories/getcategorybyid responded 400 in 60.0000 ms
+2022-07-26 00:07:34.874 +03:00 [ERR] HTTP GET /categories/getcategorybyid responded 400 in 7.0000 ms
+2022-07-26 00:07:47.144 +03:00 [INF] Get method called successfully
+2022-07-26 00:07:47.151 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 108.0000 ms
+2022-07-26 00:12:01.657 +03:00 [INF] HTTP OPTIONS /categories/addcategory/ responded 204 in 4.0000 ms
+2022-07-26 00:12:01.840 +03:00 [ERR] HTTP POST /categories/addcategory/ responded 400 in 150.0000 ms
+2022-07-26 00:13:06.709 +03:00 [INF] HTTP OPTIONS /categories/addcategory/ responded 204 in 0.0000 ms
+2022-07-26 00:13:06.764 +03:00 [ERR] HTTP POST /categories/addcategory/ responded 400 in 12.0000 ms
+2022-07-26 00:14:35.871 +03:00 [INF] HTTP OPTIONS /categories/AddCategory/ responded 204 in 7.0000 ms
+2022-07-26 00:14:35.893 +03:00 [ERR] HTTP POST /categories/AddCategory/ responded 400 in 6.0000 ms
+2022-07-26 00:18:36.607 +03:00 [INF] HTTP OPTIONS /categories/AddCategory/ responded 204 in 2.0000 ms
+2022-07-26 00:18:36.638 +03:00 [ERR] HTTP POST /categories/AddCategory/ responded 400 in 7.0000 ms
+2022-07-26 00:18:45.104 +03:00 [INF] HTTP OPTIONS /categories/AddCategory/ responded 204 in 0.0000 ms
+2022-07-26 00:18:45.117 +03:00 [ERR] HTTP POST /categories/AddCategory/ responded 400 in 4.0000 ms
+2022-07-26 00:19:05.321 +03:00 [INF] HTTP OPTIONS /categories/AddCategory/ responded 204 in 12.0000 ms
+2022-07-26 00:19:05.361 +03:00 [ERR] HTTP POST /categories/AddCategory/ responded 400 in 19.0000 ms
+2022-07-26 00:20:13.410 +03:00 [INF] HTTP OPTIONS /categories/AddCategory/ responded 204 in 3.0000 ms
+2022-07-26 00:20:13.457 +03:00 [ERR] HTTP POST /categories/AddCategory/ responded 400 in 10.0000 ms
+2022-07-26 00:21:46.939 +03:00 [INF] HTTP OPTIONS /categories/AddCategory/ responded 204 in 2.0000 ms
+2022-07-26 00:21:46.961 +03:00 [ERR] HTTP POST /categories/AddCategory/ responded 400 in 5.0000 ms
+2022-07-26 00:25:24.990 +03:00 [INF] Get method called successfully
+2022-07-26 00:25:25.010 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 93.0000 ms
+2022-07-26 00:26:06.803 +03:00 [INF] HTTP OPTIONS /categories/AddCategory/ responded 204 in 3.0000 ms
+2022-07-26 00:26:06.815 +03:00 [ERR] HTTP POST /categories/AddCategory/ responded 400 in 5.0000 ms
+2022-07-26 00:26:35.247 +03:00 [INF] HTTP OPTIONS /categories/AddCategory/ responded 204 in 7.0000 ms
+2022-07-26 00:26:35.306 +03:00 [ERR] HTTP POST /categories/AddCategory/ responded 400 in 17.0000 ms
+2022-07-26 00:30:03.332 +03:00 [INF] HTTP OPTIONS /categories/AddCategory/ responded 204 in 0.0000 ms
+2022-07-26 00:30:03.368 +03:00 [ERR] HTTP POST /categories/AddCategory/ responded 400 in 19.0000 ms
+2022-07-26 00:30:41.280 +03:00 [INF] HTTP OPTIONS /categories/AddCategory/ responded 204 in 0.0000 ms
+2022-07-26 00:30:41.306 +03:00 [ERR] HTTP POST /categories/AddCategory/ responded 400 in 14.0000 ms
+2022-07-26 00:31:13.102 +03:00 [INF] HTTP OPTIONS /categories/AddCategory/ responded 204 in 0.0000 ms
+2022-07-26 00:31:23.610 +03:00 [INF] HTTP POST /categories/AddCategory/ responded 201 in 10503.0000 ms
+2022-07-26 00:32:09.181 +03:00 [INF] HTTP OPTIONS /categories/AddCategory/ responded 204 in 3.0000 ms
+2022-07-26 00:32:12.955 +03:00 [INF] HTTP POST /categories/AddCategory/ responded 201 in 3747.0000 ms
+2022-07-26 00:33:21.251 +03:00 [INF] HTTP OPTIONS /categories/AddCategory/ responded 204 in 0.0000 ms
+2022-07-26 00:33:29.566 +03:00 [INF] HTTP POST /categories/AddCategory/ responded 201 in 8285.0000 ms
+2022-07-26 00:33:58.529 +03:00 [INF] HTTP OPTIONS /categories/AddCategory/ responded 204 in 0.0000 ms
+2022-07-26 00:33:58.630 +03:00 [ERR] HTTP POST /categories/AddCategory/ responded 500 in 58.0000 ms
+Microsoft.AspNetCore.Connections.ConnectionResetException: The client has disconnected
+ ---> System.Runtime.InteropServices.COMException (0x800704CD): An operation was attempted on a nonexistent network connection. (0x800704CD)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.IIS.Core.IO.AsyncIOOperation.GetResult(Int16 token)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.ReadBody()
+   at System.IO.Pipelines.PipeCompletion.ThrowLatchedException()
+   at System.IO.Pipelines.Pipe.GetReadResult(ReadResult& result)
+   at System.IO.Pipelines.Pipe.ReadAsync(CancellationToken token)
+   at System.IO.Pipelines.Pipe.DefaultPipeReader.ReadAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.ReadAsync(Memory`1 memory, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.IIS.Core.HttpRequestStream.ReadAsyncInternal(Memory`1 buffer, CancellationToken cancellationToken)
+   at System.IO.StreamReader.ReadBufferAsync(CancellationToken cancellationToken)
+   at System.IO.StreamReader.ReadToEndAsyncInternal()
+2022-07-26 00:33:58.900 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Connections.ConnectionResetException: The client has disconnected
+ ---> System.Runtime.InteropServices.COMException (0x800704CD): An operation was attempted on a nonexistent network connection. (0x800704CD)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.IIS.Core.IO.AsyncIOOperation.GetResult(Int16 token)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.ReadBody()
+   at System.IO.Pipelines.PipeCompletion.ThrowLatchedException()
+   at System.IO.Pipelines.Pipe.GetReadResult(ReadResult& result)
+   at System.IO.Pipelines.Pipe.ReadAsync(CancellationToken token)
+   at System.IO.Pipelines.Pipe.DefaultPipeReader.ReadAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.ReadAsync(Memory`1 memory, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.IIS.Core.HttpRequestStream.ReadAsyncInternal(Memory`1 buffer, CancellationToken cancellationToken)
+   at System.IO.StreamReader.ReadBufferAsync(CancellationToken cancellationToken)
+   at System.IO.StreamReader.ReadToEndAsyncInternal()
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-07-26 00:34:18.147 +03:00 [INF] Get method called successfully
+2022-07-26 00:34:18.175 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 32.0000 ms
+2022-07-26 00:35:01.266 +03:00 [INF] Get method called successfully
+2022-07-26 00:35:01.284 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 43.0000 ms
+2022-07-26 00:37:59.295 +03:00 [INF] HTTP OPTIONS /categories/AddCategory/ responded 204 in 0.0000 ms
+2022-07-26 00:38:02.450 +03:00 [INF] HTTP POST /categories/AddCategory/ responded 201 in 3147.0000 ms
+2022-07-26 00:38:12.989 +03:00 [INF] Get method called successfully
+2022-07-26 00:38:12.994 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 8.0000 ms
+2022-07-26 00:38:29.337 +03:00 [INF] HTTP GET /categories/getcategorybyid responded 200 in 140.0000 ms
+2022-07-26 00:38:33.070 +03:00 [INF] Get method called successfully
+2022-07-26 00:38:33.084 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 25.0000 ms
+2022-07-26 00:41:39.317 +03:00 [INF] Get method called successfully
+2022-07-26 00:41:39.326 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 28.0000 ms
+2022-07-26 00:42:03.810 +03:00 [INF] Get method called successfully
+2022-07-26 00:42:03.815 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 7.0000 ms
+2022-07-26 00:53:10.718 +03:00 [INF] Get method called successfully
+2022-07-26 00:53:10.722 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 24.0000 ms
+2022-07-26 00:53:24.570 +03:00 [INF] Get method called successfully
+2022-07-26 00:53:24.584 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 17.0000 ms
+2022-07-26 00:54:14.001 +03:00 [ERR] HTTP GET /categories/getallproducts responded 404 in 0.0000 ms
+2022-07-26 00:54:32.327 +03:00 [ERR] HTTP GET /categories/getallproducts responded 404 in 0.0000 ms
+2022-07-26 00:55:19.436 +03:00 [INF] Get method called successfully
+2022-07-26 00:55:19.452 +03:00 [INF] HTTP GET /products/getallproducts responded 200 in 160.0000 ms
+2022-07-26 00:58:20.086 +03:00 [INF] Get method called successfully
+2022-07-26 00:58:20.091 +03:00 [INF] HTTP GET /products/getallproducts responded 200 in 24.0000 ms
+2022-07-26 01:01:25.837 +03:00 [INF] HTTP GET /products/getProductbyid responded 200 in 59.0000 ms
+2022-07-26 01:01:29.509 +03:00 [INF] HTTP OPTIONS /products/RemoveProductById responded 204 in 0.0000 ms
+2022-07-26 01:01:29.564 +03:00 [INF] HTTP DELETE /products/RemoveProductById responded 200 in 48.0000 ms
+2022-07-26 01:01:34.027 +03:00 [INF] Get method called successfully
+2022-07-26 01:01:34.031 +03:00 [INF] HTTP GET /products/getallproducts responded 200 in 8.0000 ms
+2022-07-27 01:20:58.231 +03:00 [ERR] HTTP GET / responded 404 in 32.0000 ms
+2022-07-27 01:21:30.131 +03:00 [WRN] No type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-07-27 01:21:30.134 +03:00 [WRN] No type was specified for the decimal property 'Rating' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-07-27 01:21:30.137 +03:00 [WRN] No type was specified for the decimal property 'Rating' on entity type 'Seller'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-07-27 01:21:31.146 +03:00 [INF] Sellers/GetAllSellers called
+2022-07-27 01:21:31.169 +03:00 [INF] HTTP GET /sellers/getallsellers responded 200 in 1913.0000 ms
+2022-07-27 01:21:34.242 +03:00 [INF] Get method called successfully
+2022-07-27 01:21:34.247 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 54.0000 ms
+2022-07-27 01:21:35.515 +03:00 [INF] Get method called successfully
+2022-07-27 01:21:35.524 +03:00 [INF] HTTP GET /products/getallproducts responded 200 in 44.0000 ms
+2022-07-27 01:21:41.637 +03:00 [INF] Get method called successfully
+2022-07-27 01:21:41.642 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 13.0000 ms
+2022-07-27 01:21:43.530 +03:00 [INF] Sellers/GetAllSellers called
+2022-07-27 01:21:43.542 +03:00 [INF] HTTP GET /sellers/getallsellers responded 200 in 23.0000 ms
+2022-07-27 01:21:45.077 +03:00 [INF] Get method called successfully
+2022-07-27 01:21:45.082 +03:00 [INF] HTTP GET /products/getallproducts responded 200 in 16.0000 ms
+2022-07-27 01:21:47.554 +03:00 [INF] HTTP GET /products/getProductbyid responded 200 in 121.0000 ms
+2022-07-27 01:21:51.346 +03:00 [INF] Get method called successfully
+2022-07-27 01:21:51.351 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 14.0000 ms
+2022-07-27 01:21:56.532 +03:00 [INF] Sellers/GetAllSellers called
+2022-07-27 01:21:56.536 +03:00 [INF] HTTP GET /sellers/getallsellers responded 200 in 10.0000 ms
+2022-07-27 01:21:58.071 +03:00 [INF] Get method called successfully
+2022-07-27 01:21:58.075 +03:00 [INF] HTTP GET /products/getallproducts responded 200 in 10.0000 ms
+2022-07-27 01:28:26.783 +03:00 [INF] Get method called successfully
+2022-07-27 01:28:26.787 +03:00 [INF] HTTP GET /products/getallproducts responded 200 in 18.0000 ms
+2022-07-27 01:28:32.724 +03:00 [INF] Sellers/GetAllSellers called
+2022-07-27 01:28:32.730 +03:00 [INF] HTTP GET /sellers/getallsellers responded 200 in 12.0000 ms
+2022-07-27 01:32:57.778 +03:00 [INF] Get method called successfully
+2022-07-27 01:32:57.788 +03:00 [INF] HTTP GET /products/getallproducts responded 200 in 43.0000 ms
+2022-07-27 01:33:02.255 +03:00 [INF] Get method called successfully
+2022-07-27 01:33:02.259 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 7.0000 ms
+2022-07-27 01:33:04.003 +03:00 [INF] Get method called successfully
+2022-07-27 01:33:04.008 +03:00 [INF] HTTP GET /products/getallproducts responded 200 in 8.0000 ms
+2022-07-27 01:36:46.673 +03:00 [INF] Get method called successfully
+2022-07-27 01:36:46.677 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 13.0000 ms
+2022-07-27 01:36:47.463 +03:00 [INF] Get method called successfully
+2022-07-27 01:36:47.469 +03:00 [INF] HTTP GET /products/getallproducts responded 200 in 12.0000 ms
+2022-07-27 01:36:54.995 +03:00 [INF] HTTP GET /products/getProductbyid responded 200 in 8.0000 ms
+2022-07-27 01:40:41.004 +03:00 [INF] HTTP GET /products/getProductbyid responded 200 in 14.0000 ms
+2022-07-27 01:41:17.960 +03:00 [INF] HTTP GET /products/getProductbyid responded 200 in 10.0000 ms
+2022-07-27 01:41:24.629 +03:00 [INF] Get method called successfully
+2022-07-27 01:41:24.634 +03:00 [INF] HTTP GET /products/getallproducts responded 200 in 8.0000 ms
+2022-07-27 01:41:34.997 +03:00 [INF] Get method called successfully
+2022-07-27 01:41:35.005 +03:00 [INF] HTTP GET /products/getallproducts responded 200 in 10.0000 ms
+2022-07-27 01:41:37.230 +03:00 [INF] HTTP GET /products/getProductbyid responded 200 in 4.0000 ms
+2022-07-27 01:41:39.681 +03:00 [INF] Get method called successfully
+2022-07-27 01:41:39.685 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 8.0000 ms
+2022-07-27 01:41:43.051 +03:00 [INF] Get method called successfully
+2022-07-27 01:41:43.054 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 4.0000 ms
+2022-07-27 01:41:44.361 +03:00 [INF] HTTP GET /categories/getcategorybyid responded 200 in 23.0000 ms
+2022-07-27 01:41:46.736 +03:00 [INF] Sellers/GetAllSellers called
+2022-07-27 01:41:46.740 +03:00 [INF] HTTP GET /sellers/getallsellers responded 200 in 7.0000 ms
+2022-07-27 01:42:08.349 +03:00 [INF] Sellers/GetAllSellers called
+2022-07-27 01:42:08.356 +03:00 [INF] HTTP GET /sellers/getallsellers responded 200 in 20.0000 ms
+2022-07-27 01:42:09.865 +03:00 [ERR] HTTP GET /categories/getsellerbyid responded 404 in 0.0000 ms
+2022-07-27 01:42:26.991 +03:00 [INF] Sellers/GetAllSellers called
+2022-07-27 01:42:26.997 +03:00 [INF] HTTP GET /sellers/getallsellers responded 200 in 7.0000 ms
+2022-07-27 01:42:31.260 +03:00 [INF] Sellers/GetAllSellers called
+2022-07-27 01:42:31.267 +03:00 [INF] HTTP GET /sellers/getallsellers responded 200 in 10.0000 ms
+2022-07-27 01:42:41.856 +03:00 [INF] Get method called successfully
+2022-07-27 01:42:41.860 +03:00 [INF] HTTP GET /products/getallproducts responded 200 in 6.0000 ms
+2022-07-27 01:42:57.269 +03:00 [INF] Sellers/GetAllSellers called
+2022-07-27 01:42:57.273 +03:00 [INF] HTTP GET /sellers/getallsellers responded 200 in 6.0000 ms
+2022-07-27 01:42:58.526 +03:00 [INF] Get method called successfully
+2022-07-27 01:42:58.531 +03:00 [INF] HTTP GET /products/getallproducts responded 200 in 8.0000 ms
+2022-07-27 01:44:28.559 +03:00 [INF] Get method called successfully
+2022-07-27 01:44:28.566 +03:00 [INF] HTTP GET /products/getallproducts responded 200 in 13.0000 ms
+2022-07-27 01:44:37.189 +03:00 [INF] Get method called successfully
+2022-07-27 01:44:37.193 +03:00 [INF] HTTP GET /products/getallproducts responded 200 in 6.0000 ms
+2022-07-27 01:44:38.675 +03:00 [INF] HTTP GET /products/getProductbyid responded 200 in 3.0000 ms
+2022-07-27 01:44:41.009 +03:00 [INF] Get method called successfully
+2022-07-27 01:44:41.014 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 7.0000 ms
+2022-07-27 01:44:45.520 +03:00 [INF] Sellers/GetAllSellers called
+2022-07-27 01:44:45.524 +03:00 [INF] HTTP GET /sellers/getallsellers responded 200 in 8.0000 ms
+2022-07-27 01:44:54.270 +03:00 [ERR] HTTP GET /categories/getsellerbyid responded 404 in 0.0000 ms
+2022-07-27 01:46:51.831 +03:00 [ERR] HTTP GET /categories/getsellerbyid responded 404 in 0.0000 ms
+2022-07-27 01:47:15.298 +03:00 [INF] Sellers/GetAllSellers called
+2022-07-27 01:47:15.303 +03:00 [INF] HTTP GET /sellers/getallsellers responded 200 in 25.0000 ms
+2022-07-27 01:47:20.236 +03:00 [INF] Sellers/GetAllSellers called
+2022-07-27 01:47:20.240 +03:00 [INF] HTTP GET /sellers/getallsellers responded 200 in 12.0000 ms
+2022-07-27 01:47:22.211 +03:00 [ERR] HTTP GET /categories/getsellerbyid responded 404 in 0.0000 ms
+2022-07-27 01:47:58.860 +03:00 [ERR] HTTP GET /categories/getsellerbyid responded 404 in 0.0000 ms
+2022-07-27 01:48:12.683 +03:00 [INF] Get method called successfully
+2022-07-27 01:48:12.687 +03:00 [INF] HTTP GET /products/getallproducts responded 200 in 7.0000 ms
+2022-07-27 01:48:14.116 +03:00 [INF] Sellers/GetAllSellers called
+2022-07-27 01:48:14.119 +03:00 [INF] HTTP GET /sellers/getallsellers responded 200 in 3.0000 ms
+2022-07-27 01:48:17.254 +03:00 [INF] Sellers/GetAllSellers called
+2022-07-27 01:48:17.263 +03:00 [INF] HTTP GET /sellers/getallsellers responded 200 in 12.0000 ms
+2022-07-27 01:48:18.449 +03:00 [ERR] HTTP GET /categories/getsellerbyid responded 404 in 0.0000 ms
+2022-07-27 01:48:49.877 +03:00 [INF] HTTP GET /sellers/getsellerbyid responded 200 in 24.0000 ms
+2022-07-27 01:50:24.899 +03:00 [ERR] HTTP GET /categories/getsellerbyid responded 404 in 0.0000 ms
+2022-07-27 01:50:29.217 +03:00 [INF] Sellers/GetAllSellers called
+2022-07-27 01:50:29.224 +03:00 [INF] HTTP GET /sellers/getallsellers responded 200 in 10.0000 ms
+2022-07-27 01:50:32.432 +03:00 [ERR] HTTP GET /categories/getsellerbyid responded 404 in 0.0000 ms
+2022-07-27 01:51:03.709 +03:00 [INF] Sellers/GetAllSellers called
+2022-07-27 01:51:03.713 +03:00 [INF] HTTP GET /sellers/getallsellers responded 200 in 9.0000 ms
+2022-07-27 01:52:36.861 +03:00 [ERR] HTTP GET /categories/getsellerbyid responded 404 in 0.0000 ms
+2022-07-27 01:53:19.963 +03:00 [INF] Get method called successfully
+2022-07-27 01:53:19.968 +03:00 [INF] HTTP GET /products/getallproducts responded 200 in 37.0000 ms
+2022-07-27 01:53:32.804 +03:00 [INF] HTTP GET /products/getProductbyid responded 200 in 2.0000 ms
+2022-07-27 01:54:13.124 +03:00 [INF] HTTP GET /sellers/getsellerbyid responded 200 in 4847.0000 ms
+2022-07-27 01:54:34.915 +03:00 [INF] Sellers/GetAllSellers called
+2022-07-27 01:54:34.924 +03:00 [INF] HTTP GET /sellers/getallsellers responded 200 in 14.0000 ms
+2022-07-27 01:55:05.265 +03:00 [INF] HTTP OPTIONS /sellers/AddSeller/ responded 204 in 4.0000 ms
+2022-07-27 01:55:05.293 +03:00 [ERR] HTTP POST /sellers/AddSeller/ responded 400 in 21.0000 ms
+2022-07-27 01:55:17.996 +03:00 [INF] Sellers/GetAllSellers called
+2022-07-27 01:55:17.999 +03:00 [INF] HTTP GET /sellers/getallsellers responded 200 in 5.0000 ms
+2022-07-27 01:56:22.975 +03:00 [INF] HTTP OPTIONS /sellers/AddSeller/ responded 204 in 0.0000 ms
+2022-07-27 01:56:22.988 +03:00 [ERR] HTTP POST /sellers/AddSeller/ responded 400 in 2.0000 ms
+2022-07-27 01:58:02.197 +03:00 [INF] Get method called successfully
+2022-07-27 01:58:02.201 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 9.0000 ms
+2022-07-27 01:58:03.087 +03:00 [INF] Sellers/GetAllSellers called
+2022-07-27 01:58:03.090 +03:00 [INF] HTTP GET /sellers/getallsellers responded 200 in 5.0000 ms
+2022-07-27 01:59:53.689 +03:00 [INF] HTTP OPTIONS /sellers/AddSeller/ responded 204 in 0.0000 ms
+2022-07-27 01:59:53.700 +03:00 [ERR] HTTP POST /sellers/AddSeller/ responded 400 in 5.0000 ms
+2022-07-27 02:00:07.791 +03:00 [INF] HTTP OPTIONS /sellers/AddSeller/ responded 204 in 0.0000 ms
+2022-07-27 02:00:07.806 +03:00 [ERR] HTTP POST /sellers/AddSeller/ responded 400 in 5.0000 ms
+2022-07-27 02:01:50.133 +03:00 [INF] HTTP OPTIONS /sellers/AddSeller/ responded 204 in 0.0000 ms
+2022-07-27 02:01:50.168 +03:00 [ERR] HTTP POST /sellers/AddSeller/ responded 400 in 5.0000 ms
+2022-07-27 02:02:36.329 +03:00 [INF] HTTP OPTIONS /sellers/AddSeller/ responded 204 in 0.0000 ms
+2022-07-27 02:02:36.345 +03:00 [ERR] HTTP POST /sellers/AddSeller/ responded 400 in 3.0000 ms
+2022-07-27 02:04:01.908 +03:00 [INF] HTTP OPTIONS /sellers/AddSeller/ responded 204 in 0.0000 ms
+2022-07-27 02:04:01.917 +03:00 [ERR] HTTP POST /sellers/AddSeller/ responded 400 in 1.0000 ms
+2022-07-27 02:04:03.709 +03:00 [ERR] HTTP POST /sellers/AddSeller/ responded 400 in 2.0000 ms
+2022-07-27 02:04:11.560 +03:00 [INF] Sellers/GetAllSellers called
+2022-07-27 02:04:11.563 +03:00 [INF] HTTP GET /sellers/getallsellers responded 200 in 8.0000 ms
+2022-07-27 02:04:30.530 +03:00 [INF] HTTP OPTIONS /sellers/AddSeller/ responded 204 in 0.0000 ms
+2022-07-27 02:04:30.536 +03:00 [ERR] HTTP POST /sellers/AddSeller/ responded 400 in 2.0000 ms
+2022-07-27 02:04:38.908 +03:00 [INF] HTTP OPTIONS /sellers/AddSeller/ responded 204 in 0.0000 ms
+2022-07-27 02:04:38.914 +03:00 [ERR] HTTP POST /sellers/AddSeller/ responded 400 in 1.0000 ms
+2022-07-27 02:05:06.688 +03:00 [INF] Get method called successfully
+2022-07-27 02:05:06.691 +03:00 [INF] HTTP GET /products/getallproducts responded 200 in 5.0000 ms
+2022-07-27 02:05:16.354 +03:00 [INF] Get method called successfully
+2022-07-27 02:05:16.358 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 8.0000 ms
+2022-07-27 02:05:23.759 +03:00 [INF] Get method called successfully
+2022-07-27 02:05:23.763 +03:00 [INF] HTTP GET /products/getallproducts responded 200 in 3.0000 ms
+2022-07-27 02:05:39.216 +03:00 [INF] HTTP OPTIONS /products/AddProduct/ responded 204 in 0.0000 ms
+2022-07-27 02:05:39.253 +03:00 [ERR] HTTP POST /products/AddProduct/ responded 400 in 7.0000 ms
+2022-07-27 02:05:42.204 +03:00 [INF] Sellers/GetAllSellers called
+2022-07-27 02:05:42.208 +03:00 [INF] HTTP GET /sellers/getallsellers responded 200 in 6.0000 ms
+2022-07-27 02:05:44.467 +03:00 [INF] Get method called successfully
+2022-07-27 02:05:44.472 +03:00 [INF] HTTP GET /products/getallproducts responded 200 in 5.0000 ms
+2022-07-27 02:05:49.942 +03:00 [INF] Get method called successfully
+2022-07-27 02:05:49.946 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 5.0000 ms
+2022-07-27 02:05:59.294 +03:00 [INF] HTTP OPTIONS /categories/AddCategory/ responded 204 in 5.0000 ms
+2022-07-27 02:05:59.483 +03:00 [INF] HTTP POST /categories/AddCategory/ responded 201 in 184.0000 ms
+2022-07-27 02:06:25.689 +03:00 [INF] Get method called successfully
+2022-07-27 02:06:25.697 +03:00 [INF] HTTP GET /products/getallproducts responded 200 in 12.0000 ms
+2022-07-27 02:06:36.353 +03:00 [INF] Get method called successfully
+2022-07-27 02:06:36.363 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 25.0000 ms
+2022-07-27 02:06:38.903 +03:00 [INF] Get method called successfully
+2022-07-27 02:06:38.910 +03:00 [INF] HTTP GET /products/getallproducts responded 200 in 8.0000 ms
+2022-07-27 02:06:48.017 +03:00 [INF] HTTP OPTIONS /products/AddProduct/ responded 204 in 0.0000 ms
+2022-07-27 02:06:48.030 +03:00 [ERR] HTTP POST /products/AddProduct/ responded 400 in 3.0000 ms
+2022-07-27 02:08:48.010 +03:00 [INF] Sellers/GetAllSellers called
+2022-07-27 02:08:48.016 +03:00 [INF] HTTP GET /sellers/getallsellers responded 200 in 8.0000 ms
+2022-07-27 02:09:04.031 +03:00 [INF] HTTP OPTIONS /sellers/AddSeller/ responded 204 in 0.0000 ms
+2022-07-27 02:09:04.043 +03:00 [ERR] HTTP POST /sellers/AddSeller/ responded 400 in 7.0000 ms
+2022-07-27 02:09:08.390 +03:00 [ERR] HTTP POST /sellers/AddSeller/ responded 400 in 3.0000 ms
+2022-07-27 02:09:44.829 +03:00 [INF] Get method called successfully
+2022-07-27 02:09:44.837 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 10.0000 ms
+2022-07-27 02:09:50.425 +03:00 [INF] HTTP OPTIONS /categories/AddCategory/ responded 204 in 0.0000 ms
+2022-07-27 02:09:50.456 +03:00 [INF] HTTP POST /categories/AddCategory/ responded 201 in 8.0000 ms
+2022-07-27 02:11:59.872 +03:00 [INF] Sellers/GetAllSellers called
+2022-07-27 02:11:59.875 +03:00 [INF] HTTP GET /sellers/getallsellers responded 200 in 9.0000 ms
+2022-07-27 02:12:13.708 +03:00 [INF] HTTP OPTIONS /sellers/AddSeller/ responded 204 in 0.0000 ms
+2022-07-27 02:12:13.717 +03:00 [ERR] HTTP POST /sellers/AddSeller/ responded 400 in 1.0000 ms
+2022-07-27 02:12:16.309 +03:00 [ERR] HTTP POST /sellers/AddSeller/ responded 400 in 2.0000 ms
+2022-07-27 02:12:59.656 +03:00 [INF] HTTP OPTIONS /sellers/AddSeller/ responded 204 in 0.0000 ms
+2022-07-27 02:12:59.675 +03:00 [ERR] HTTP POST /sellers/AddSeller/ responded 400 in 3.0000 ms
+2022-07-27 02:13:14.256 +03:00 [INF] HTTP OPTIONS /sellers/AddSeller/ responded 204 in 0.0000 ms
+2022-07-27 02:13:14.267 +03:00 [ERR] HTTP POST /sellers/AddSeller/ responded 400 in 4.0000 ms
+2022-07-27 02:14:15.759 +03:00 [INF] HTTP OPTIONS /sellers/AddSeller/ responded 204 in 0.0000 ms
+2022-07-27 02:14:15.810 +03:00 [ERR] HTTP POST /sellers/AddSeller/ responded 400 in 30.0000 ms
+2022-07-27 02:14:24.665 +03:00 [INF] HTTP OPTIONS /sellers/AddSeller/ responded 204 in 0.0000 ms
+2022-07-27 02:14:24.671 +03:00 [ERR] HTTP POST /sellers/AddSeller/ responded 400 in 1.0000 ms
+2022-07-27 02:15:47.445 +03:00 [ERR] HTTP POST /sellers/addseller responded 400 in 7.0000 ms
+2022-07-27 02:16:38.407 +03:00 [INF] HTTP OPTIONS /sellers/AddSeller/ responded 204 in 0.0000 ms
+2022-07-27 02:16:38.421 +03:00 [ERR] HTTP POST /sellers/AddSeller/ responded 400 in 1.0000 ms
+2022-07-27 02:16:48.351 +03:00 [INF] Get method called successfully
+2022-07-27 02:16:48.355 +03:00 [INF] HTTP GET /products/getallproducts responded 200 in 14.0000 ms
+2022-07-27 02:17:03.027 +03:00 [INF] HTTP OPTIONS /products/AddProduct/ responded 204 in 0.0000 ms
+2022-07-27 02:17:03.040 +03:00 [ERR] HTTP POST /products/AddProduct/ responded 400 in 3.0000 ms
+2022-07-27 02:17:29.242 +03:00 [INF] HTTP OPTIONS /products/AddProduct/ responded 204 in 0.0000 ms
+2022-07-27 02:17:29.249 +03:00 [ERR] HTTP POST /products/AddProduct/ responded 400 in 1.0000 ms
+2022-07-27 09:45:39.643 +03:00 [ERR] HTTP GET / responded 404 in 58.0000 ms
+2022-07-27 09:46:39.919 +03:00 [INF] HTTP OPTIONS /products/AddProduct/ responded 204 in 33.0000 ms
+2022-07-27 09:46:40.605 +03:00 [ERR] HTTP POST /products/AddProduct/ responded 400 in 674.0000 ms
+2022-07-27 09:48:28.499 +03:00 [INF] HTTP OPTIONS /products/AddProduct/ responded 204 in 9.0000 ms
+2022-07-27 09:48:28.563 +03:00 [ERR] HTTP POST /products/AddProduct/ responded 400 in 17.0000 ms
+2022-07-27 09:50:06.028 +03:00 [INF] HTTP OPTIONS /products/AddProduct/ responded 204 in 0.0000 ms
+2022-07-27 09:50:09.395 +03:00 [ERR] HTTP POST /products/AddProduct/ responded 400 in 6.0000 ms
+2022-07-27 09:50:43.242 +03:00 [INF] HTTP OPTIONS /products/AddProduct/ responded 204 in 32.0000 ms
+2022-07-27 09:50:43.260 +03:00 [ERR] HTTP POST /products/AddProduct/ responded 400 in 4.0000 ms
+2022-07-27 09:51:44.923 +03:00 [INF] HTTP OPTIONS /products/AddProduct/ responded 204 in 0.0000 ms
+2022-07-27 09:51:44.961 +03:00 [ERR] HTTP POST /products/AddProduct/ responded 400 in 11.0000 ms
+2022-07-27 09:51:56.683 +03:00 [INF] HTTP OPTIONS /products/AddProduct/ responded 204 in 0.0000 ms
+2022-07-27 09:51:56.712 +03:00 [ERR] HTTP POST /products/AddProduct/ responded 400 in 7.0000 ms
+2022-07-27 09:53:03.674 +03:00 [WRN] No type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-07-27 09:53:03.679 +03:00 [WRN] No type was specified for the decimal property 'Rating' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-07-27 09:53:03.681 +03:00 [WRN] No type was specified for the decimal property 'Rating' on entity type 'Seller'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-07-27 09:53:07.222 +03:00 [INF] Sellers/GetAllSellers called
+2022-07-27 09:53:07.241 +03:00 [INF] HTTP GET /sellers/getallsellers responded 200 in 6158.0000 ms
+2022-07-27 09:53:13.819 +03:00 [INF] HTTP OPTIONS /sellers/AddSeller/ responded 204 in 2.0000 ms
+2022-07-27 09:53:13.838 +03:00 [ERR] HTTP POST /sellers/AddSeller/ responded 400 in 10.0000 ms
+2022-07-27 10:58:50.247 +03:00 [INF] HTTP OPTIONS /sellers/AddSeller/ responded 204 in 3.0000 ms
+2022-07-27 10:58:50.299 +03:00 [ERR] HTTP POST /sellers/AddSeller/ responded 400 in 11.0000 ms
+2022-07-27 11:13:52.762 +03:00 [INF] HTTP OPTIONS /sellers/AddSeller/ responded 204 in 3.0000 ms
+2022-07-27 11:13:52.779 +03:00 [ERR] HTTP POST /sellers/AddSeller/ responded 400 in 3.0000 ms
+2022-07-27 11:14:11.345 +03:00 [INF] HTTP OPTIONS /sellers/AddSeller/ responded 204 in 0.0000 ms
+2022-07-27 11:14:19.779 +03:00 [INF] HTTP POST /sellers/AddSeller/ responded 201 in 8426.0000 ms
+2022-07-27 11:14:24.149 +03:00 [INF] Sellers/GetAllSellers called
+2022-07-27 11:14:24.154 +03:00 [INF] HTTP GET /sellers/getallsellers responded 200 in 18.0000 ms
+2022-07-27 11:14:26.296 +03:00 [INF] Get method called successfully
+2022-07-27 11:14:26.317 +03:00 [INF] HTTP GET /products/getallproducts responded 200 in 36.0000 ms
+2022-07-27 11:14:26.874 +03:00 [INF] Get method called successfully
+2022-07-27 11:14:26.878 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 14.0000 ms
+2022-07-27 11:14:30.460 +03:00 [INF] Get method called successfully
+2022-07-27 11:14:30.465 +03:00 [INF] HTTP GET /products/getallproducts responded 200 in 7.0000 ms
+2022-07-27 11:15:52.210 +03:00 [INF] HTTP OPTIONS /products/AddProduct/ responded 204 in 0.0000 ms
+2022-07-27 11:15:54.011 +03:00 [INF] HTTP POST /products/AddProduct/ responded 201 in 1792.0000 ms
+2022-07-27 11:15:57.223 +03:00 [INF] Get method called successfully
+2022-07-27 11:15:57.227 +03:00 [INF] HTTP GET /products/getallproducts responded 200 in 6.0000 ms
+2022-07-27 11:16:01.287 +03:00 [INF] HTTP GET /products/getProductbyid responded 200 in 63.0000 ms

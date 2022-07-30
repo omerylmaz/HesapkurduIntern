@@ -8,7 +8,7 @@ using System.Text;
 
 namespace DataAccess.TempData
 {
-    public class CategoryData:ICategoryData
+    public class CategoryData:ICategoryRepo
     {
         public List<Category> _categories { get; set; }
         public CategoryData()

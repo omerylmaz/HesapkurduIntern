@@ -5,7 +5,7 @@ using System.Text;
 
 namespace DataAccess.Base
 {
-    public interface IProductData:IData<Product>
+    public interface IProductRepo:IRepository<Product>
     {
 
     }

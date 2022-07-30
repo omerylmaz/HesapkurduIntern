@@ -10,45 +10,45 @@ namespace BusinessLogic.Services
 {
     public class SellerService : ISellerService
     {
-        private ISellerData _sellerData;
-        public SellerService(ISellerData sellerData)
+        private ISellerRepo _sellerRepo;
+        public SellerService(ISellerRepo sellerRepo)
         {
-            _sellerData = sellerData;
+            _sellerRepo = sellerRepo;
         }
         public void AddSeller(Seller seller)
         {
-            _sellerData.Add(seller);
+            _sellerRepo.Add(seller);
         }
 
         public List<Seller> GetAllSellers()
         {
-            return _sellerData.GetAll();
+            return _sellerRepo.GetAll();
         }
 
-        public IEnumerable<Seller> GetSellersByRating(double rating)
+        public IEnumerable<Seller> GetSellersByRating(decimal rating)
         {
-            return _sellerData.GetAll(p => p.Rating >= rating);
+            return _sellerRepo.GetAll(p => p.Rating >= rating);
         }
 
         public Seller GetSellerById(int id)
         {
-            return _sellerData.GetItemById(id);
+            return _sellerRepo.GetItemById(id);
         }
 
         public void RemoveSeller(Seller seller)
         {
-            _sellerData.Remove(seller);
+            _sellerRepo.Remove(seller);
         }
 
         public Seller RemoveSellerById(int id)
         {
-            Seller s = _sellerData.RemoveItemById(id);
+            Seller s = _sellerRepo.RemoveItemById(id);
             return s;
         }
 
         public void Update(Seller seller)
         {
-            _sellerData.Update(seller);
+            _sellerRepo.Update(seller);
         }
     }
 }
