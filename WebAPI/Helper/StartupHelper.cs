@@ -1,4 +1,5 @@
 ﻿using BusinessLogic.Base;
+using BusinessLogic.Caching;
 using BusinessLogic.Services;
 using DataAccess;
 using DataAccess.Base;
@@ -24,6 +25,7 @@ namespace WebAPI.Helper
             //services.AddSingleton<ISellerRepo, SellerData>();
             services.AddScoped<ISellerRepo, SellerRepo>();
             services.AddScoped(typeof(IRepository<>), typeof(GenericRepository<>));
+            services.AddScoped(typeof(ICacheRepo<>), typeof(CacheRepo<>));
         }
     }
 }

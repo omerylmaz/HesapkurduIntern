@@ -36,9 +36,11 @@ namespace WebAPI
         {
             services.AddControllers();
             services.AddCors(options =>
-     options.AddDefaultPolicy(builder =>
-     builder.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin()));
+            options.AddDefaultPolicy(builder =>
+                builder.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin()));
             services.DI();
+            services.AddMemoryCache();
+            services.AddStackExchangeRedisCache(options => options.Configuration = "localhost:6379");
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
