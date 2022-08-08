@@ -32,7 +32,7 @@ namespace WebAPI.Controllers
 
                 _logger.LogInformation("Get method called successfully");
                 //Log.ForContext<CategoriesController>().Information("denemedenemedeneme");
-                return Ok(_categoryService.GetAllCategories());
+                return Ok(x);
 
             }
             catch (System.Exception e)
