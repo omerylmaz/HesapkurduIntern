@@ -2,6 +2,7 @@
 using DataAccess;
 using DataAccess.Base;
 using Infrastructure.Models;
+using Models.Enums;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -22,7 +23,7 @@ namespace BusinessLogic.Services
         {
             _sellerRepo.Add(seller);
 
-            _cache.Add(seller);
+            _cache.Add(seller, 300, CacheTypes.Distributed);
         }
 
         public List<Seller> GetAllSellers()
@@ -31,7 +32,7 @@ namespace BusinessLogic.Services
             if (sellers == null)
             {
                 var datas = _sellerRepo.GetAll();
-                _cache.AddAll(sellersCache, datas);
+                _cache.AddAll(sellersCache, datas, 300, CacheTypes.Distributed);
                 return datas;
             }
             return sellers;
@@ -52,7 +53,7 @@ namespace BusinessLogic.Services
             else
             {
                 Seller c = _sellerRepo.GetItemById(id);
-                if (c != null) { _cache.Add(c); }
+                if (c != null) { _cache.Add(c, 300, CacheTypes.Distributed); }
                 return c;
             }
         }
@@ -80,7 +81,7 @@ namespace BusinessLogic.Services
 
         public void Update(Seller seller)
         {
-            _cache.Update(seller);
+            //_cache.Update(seller);
             _sellerRepo.Update(seller);
         }
     }
