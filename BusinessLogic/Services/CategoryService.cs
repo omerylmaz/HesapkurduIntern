@@ -8,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using Microsoft.Extensions.Caching.Distributed;
+using Models.Enums;
 
 namespace BusinessLogic.Services
 {
@@ -25,7 +26,7 @@ namespace BusinessLogic.Services
         {
             _categoryRepo.Add(category);
 
-            _cache.Add(category);
+            _cache.Add(category, 300, CacheTypes.All);
         }
 
         public List<Category> GetAllCategories()
@@ -34,7 +35,7 @@ namespace BusinessLogic.Services
             if (categories == null)
             {
                 var datas = _categoryRepo.GetAll();
-                _cache.AddAll(categoriesCache, datas);
+                _cache.AddAll(categoriesCache, datas, 300, CacheTypes.All);
                 return datas;
             }
             return categories;
@@ -50,7 +51,7 @@ namespace BusinessLogic.Services
             else
             {
                 Category c = _categoryRepo.GetItemById(id);
-                if (c != null) { _cache.Add(c); }
+                if (c != null) { _cache.Add(c, 300, CacheTypes.All); }
                 return c;
             }
         }
@@ -78,7 +79,7 @@ namespace BusinessLogic.Services
 
         public void Update(Category category)
         {
-            _cache.Update(category);
+            //_cache.Update(category);
             _categoryRepo.Update(category);
         }
     }

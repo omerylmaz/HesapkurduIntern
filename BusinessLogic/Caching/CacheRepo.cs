@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using Newtonsoft.Json;
+using Models.Enums;
 
 namespace BusinessLogic.Caching
 { // Burada override mı edilmesi gerekirdi
@@ -23,26 +24,39 @@ namespace BusinessLogic.Caching
             _distributedOptions = new DistributedCacheEntryOptions();
             _memoryOptions.AbsoluteExpiration = DateTime.Now.AddSeconds(30);
             _memoryOptions.SlidingExpiration = TimeSpan.FromSeconds(5);
-            _distributedOptions.AbsoluteExpiration = DateTime.Now.AddMinutes(5);
-            _distributedOptions.SlidingExpiration = TimeSpan.FromMinutes(1);
+            //_distributedOptions.AbsoluteExpiration = DateTime.Now.AddMinutes(5);
+            //_distributedOptions.SlidingExpiration = TimeSpan.FromMinutes(1);
             _memoryCache = memoryCache;
             _distributedCache = distributedCache;
         }
 
-        public T Add(T item)
+        public T Add(T item, int expireInSeconds, CacheTypes cacheTypes)
         {
-            _memoryCache.Set(item.Id, item, _memoryOptions);
+            if (cacheTypes == CacheTypes.All || cacheTypes == CacheTypes.Memory)
+            {
+                _memoryCache.Set(item.Id, item, _memoryOptions);
 
-            string data = JsonConvert.SerializeObject(item);
-            _distributedCache.SetString($"{entityName}:{item.Id}", data);
+            }
+            if (cacheTypes == CacheTypes.All || cacheTypes == CacheTypes.Distributed)
+            {
+                string data = JsonConvert.SerializeObject(item);
+                _distributedCache.SetString($"{entityName}:{item.Id}", data, new DistributedCacheEntryOptions() { AbsoluteExpiration = DateTime.Now.AddSeconds(expireInSeconds) });
+
+            }
 
             return item;
         }
-        public List<T> AddAll(string key, List<T> items)
+        public List<T> AddAll(string key, List<T> items, int expireInSeconds, CacheTypes cacheTypes)
         {
-            _memoryCache.Set(key, items, _memoryOptions);
-            string data = JsonConvert.SerializeObject(items);
-            _distributedCache.SetString($"{entityName}:{key}", data);
+            if (cacheTypes == CacheTypes.All || cacheTypes == CacheTypes.Memory)
+            {
+                _memoryCache.Set(key, items, _memoryOptions);
+            }
+            if (cacheTypes == CacheTypes.All || cacheTypes == CacheTypes.Distributed)
+            {
+                string data = JsonConvert.SerializeObject(items);
+                _distributedCache.SetString($"{entityName}:{key}", data, new DistributedCacheEntryOptions() { AbsoluteExpiration = DateTime.Now.AddSeconds(expireInSeconds) });
+            }
             return items;
         }
 
@@ -103,25 +117,25 @@ namespace BusinessLogic.Caching
             return _memoryCache.TryGetValue(key, out value);
         }
 
-        public T Update(T item)
-        {
-            bool isCached = TryGetValue(item.Id, out object value);
-            if (isCached)
-            {
-                value = item;
-                Remove(item.Id.ToString());
-                Add(item);
-            }
+        //public T Update(T item)
+        //{
+        //    bool isCached = TryGetValue(item.Id, out object value);
+        //    if (isCached)
+        //    {
+        //        value = item;
+        //        Remove(item.Id.ToString());
+        //        Add(item, 300);
+        //    }
 
-            var data = _distributedCache.GetString($"{entityName}:{item.Id}");
-            if (data != null)
-            {
-                _distributedCache.Remove($"{entityName}:{item.Id}");
-                _distributedCache.SetString($"{entityName}:{item.Id}", data);
-                return item;
-            }
-            return null;
+        //    var data = _distributedCache.GetString($"{entityName}:{item.Id}");
+        //    if (data != null)
+        //    {
+        //        _distributedCache.Remove($"{entityName}:{item.Id}");
+        //        _distributedCache.SetString($"{entityName}:{item.Id}", data);
+        //        return item;
+        //    }
+        //    return null;
 
-        }
+        //}
     }
 }

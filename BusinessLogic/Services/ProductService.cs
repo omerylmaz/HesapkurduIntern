@@ -3,12 +3,14 @@ using BusinessLogic.Caching;
 using DataAccess;
 using DataAccess.Base;
 using Infrastructure.Models;
+using Models.Enums;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace BusinessLogic.Services
 {
+    //productın cache te kalma durumu
     public class ProductService : IProductService
     {
         ICacheRepo<Product> _cache;
@@ -23,7 +25,7 @@ namespace BusinessLogic.Services
         {
             _productRepo.Add(product);
 
-            _cache.Add(product);
+            _cache.Add(product, 0, CacheTypes.None);
         }
 
         public List<Product> GetAllProducts()
@@ -32,7 +34,7 @@ namespace BusinessLogic.Services
             if (products == null)
             {
                 var datas = _productRepo.GetAll();
-                _cache.AddAll(productsCache, datas);
+                _cache.AddAll(productsCache, datas, 0, CacheTypes.None);
                 return datas;
             }
             return products;
@@ -48,7 +50,7 @@ namespace BusinessLogic.Services
             else
             {
                 Product c = _productRepo.GetItemById(id);
-                if (c != null) { _cache.Add(c); }
+                if (c != null) { _cache.Add(c, 0, CacheTypes.None); }
                 return c;
             }
         }
@@ -81,7 +83,7 @@ namespace BusinessLogic.Services
 
         public void Update(Product product)
         {
-            _cache.Update(product);
+            //_cache.Update(product);
             _productRepo.Update(product);
         }
     }

@@ -1670,3 +1670,5 @@ System.ArgumentNullException: Value cannot be null. (Parameter 'value')
 2022-08-08 00:35:28.832 +03:00 [INF] Get method called successfully
 2022-08-08 00:35:28.837 +03:00 [INF] HTTP GET /products/GetAllProducts responded 200 in 6.0000 ms
 2022-08-08 00:36:27.714 +03:00 [INF] HTTP GET /products/GetProductById responded 200 in 17.0000 ms
+2022-08-08 12:43:57.931 +03:00 [ERR] HTTP GET / responded 404 in 26.0000 ms
+2022-08-08 12:50:08.419 +03:00 [ERR] HTTP GET / responded 404 in 31.0000 ms
