@@ -3,7 +3,6 @@
 FROM mcr.microsoft.com/dotnet/aspnet:3.1 AS base
 WORKDIR /app
 EXPOSE 80
-EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:3.1 AS build
 WORKDIR /src
@@ -11,7 +10,7 @@ COPY ["WebAPI/WebAPI.csproj", "WebAPI/"]
 COPY ["BusinessLogic/BusinessLogic.csproj", "BusinessLogic/"]
 COPY ["Infrastructure/Models.csproj", "Infrastructure/"]
 COPY ["DataAccess/DataAccess.csproj", "DataAccess/"]
-RUN dotnet restore "WebAPI/WebAPI.csproj"
+RUN dotnet restore "./WebAPI/WebAPI.csproj"
 COPY . .
 WORKDIR "/src/WebAPI"
 RUN dotnet build "WebAPI.csproj" -c Release -o /app/build
@@ -22,5 +21,4 @@ RUN dotnet publish "WebAPI.csproj" -c Release -o /app/publish
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENV ASPNETCORE_URLS="https://*:9000"
 ENTRYPOINT ["dotnet", "WebAPI.dll"]

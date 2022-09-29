@@ -1,25 +1,29 @@
-#See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
-
-FROM mcr.microsoft.com/dotnet/aspnet:3.1 AS base
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build-env
 WORKDIR /app
 EXPOSE 80
-EXPOSE 443
+#EXPOSE 443
 
-FROM mcr.microsoft.com/dotnet/sdk:3.1 AS build
-WORKDIR /src
+
 COPY ["WebAPI/WebAPI.csproj", "WebAPI/"]
+COPY ["Infrastructure/Models.csproj", "Models/"]
 COPY ["BusinessLogic/BusinessLogic.csproj", "BusinessLogic/"]
-COPY ["Infrastructure/Models.csproj", "Infrastructure/"]
 COPY ["DataAccess/DataAccess.csproj", "DataAccess/"]
-RUN dotnet restore "WebAPI/WebAPI.csproj"
+RUN dotnet restore "./WebAPI/WebAPI.csproj"
+#RUN dotnet dev-certs https --clean
+#RUN dotnet dev-certs https -t
+
+
 COPY . .
-WORKDIR "/src/WebAPI"
-RUN dotnet build "WebAPI.csproj" -c Release -o /app/build
+RUN dotnet build "WebAPI/WebAPI.csproj" -c Release -o /app/build
 
-FROM build AS publish
-RUN dotnet publish "WebAPI.csproj" -c Release -o /app/publish
+FROM build-env AS publish
+RUN dotnet publish "WebAPI/WebAPI.csproj" -c Release -o /app/out
 
-FROM base AS final
+
+FROM mcr.microsoft.com/dotnet/aspnet:3.1
 WORKDIR /app
-COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "WebAPI.dll"]
+COPY --from=publish /app/out .
+
+#ENV ASPNETCORE_URLS=https://+:443;http://+:80
+
+ENTRYPOINT ["dotnet", "/app/WebAPI.dll"]

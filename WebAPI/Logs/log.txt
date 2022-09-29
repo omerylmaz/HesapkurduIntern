@@ -1755,3 +1755,84 @@ Error Number:-1,State:0,Class:20
 2022-08-11 22:07:22.483 +03:00 [WRN] No type was specified for the decimal property 'Rating' on entity type 'Seller'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
 2022-08-11 22:07:23.051 +03:00 [INF] Get method called successfully
 2022-08-11 22:07:23.080 +03:00 [INF] HTTP GET /products/getallproducts responded 200 in 3904.0000 ms
+2022-09-12 00:09:32.239 +03:00 [ERR] HTTP GET / responded 404 in 18.0000 ms
+2022-09-12 00:09:56.123 +03:00 [ERR] Products/GetAllProducts - There is an exception: It was not possible to connect to the redis server(s). Error connecting right now. To allow this multiplexer to continue retrying until it's able to connect, use abortConnect=false in your connection string or AbortOnConnectFail=false; in your code.
+2022-09-12 00:09:56.148 +03:00 [ERR] HTTP GET /products/getallproducts responded 500 in 10023.0000 ms
+2022-09-12 00:09:56.390 +03:00 [ERR] HTTP GET /favicon.ico responded 404 in 1.0000 ms
+2022-09-12 00:12:12.206 +03:00 [ERR] HTTP GET / responded 404 in 16.0000 ms
+2022-09-12 00:12:33.079 +03:00 [ERR] Products/GetAllProducts - There is an exception: It was not possible to connect to the redis server(s). Error connecting right now. To allow this multiplexer to continue retrying until it's able to connect, use abortConnect=false in your connection string or AbortOnConnectFail=false; in your code.
+2022-09-12 00:12:33.099 +03:00 [ERR] HTTP GET /products/getallproducts responded 500 in 9590.0000 ms
+2022-09-12 00:41:24.470 +03:00 [ERR] HTTP GET / responded 404 in 21.0000 ms
+2022-09-12 00:41:44.138 +03:00 [ERR] Products/GetAllProducts - There is an exception: It was not possible to connect to the redis server(s). Error connecting right now. To allow this multiplexer to continue retrying until it's able to connect, use abortConnect=false in your connection string or AbortOnConnectFail=false; in your code.
+2022-09-12 00:41:44.158 +03:00 [ERR] HTTP GET /products/getallproducts responded 500 in 9633.0000 ms
+2022-09-17 22:41:24.526 +03:00 [ERR] HTTP GET / responded 404 in 22.0000 ms
+2022-09-17 22:41:59.762 +03:00 [WRN] No type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-17 22:41:59.767 +03:00 [WRN] No type was specified for the decimal property 'Rating' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-17 22:41:59.769 +03:00 [WRN] No type was specified for the decimal property 'Rating' on entity type 'Seller'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-17 22:42:00.779 +03:00 [INF] Get method called successfully
+2022-09-17 22:42:00.807 +03:00 [INF] HTTP GET /products/getallproducts responded 200 in 2645.0000 ms
+2022-09-17 22:42:01.063 +03:00 [ERR] HTTP GET /favicon.ico responded 404 in 1.0000 ms
+2022-09-17 23:07:09.609 +03:00 [ERR] HTTP GET / responded 404 in 24.0000 ms
+2022-09-17 23:19:19.463 +03:00 [ERR] HTTP GET / responded 404 in 15.0000 ms
+2022-09-17 23:19:22.788 +03:00 [WRN] No type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-17 23:19:22.792 +03:00 [WRN] No type was specified for the decimal property 'Rating' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-17 23:19:22.795 +03:00 [WRN] No type was specified for the decimal property 'Rating' on entity type 'Seller'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-17 23:19:23.342 +03:00 [INF] Get method called successfully
+2022-09-17 23:19:23.363 +03:00 [INF] HTTP GET /products/getallproducts responded 200 in 1421.0000 ms
+2022-09-17 23:47:53.346 +03:00 [ERR] HTTP GET / responded 404 in 44.0000 ms
+2022-09-17 23:48:04.104 +03:00 [WRN] No type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-17 23:48:04.109 +03:00 [WRN] No type was specified for the decimal property 'Rating' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-17 23:48:04.113 +03:00 [WRN] No type was specified for the decimal property 'Rating' on entity type 'Seller'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-17 23:48:06.439 +03:00 [INF] Get method called successfully
+2022-09-17 23:48:06.545 +03:00 [INF] HTTP GET /products/getallproducts responded 200 in 5677.0000 ms
+2022-09-17 23:53:20.469 +03:00 [INF] HTTP POST /categories/addcategory responded 201 in 1987.0000 ms
+2022-09-17 23:53:26.336 +03:00 [INF] HTTP POST /categories/addcategory responded 201 in 176.0000 ms
+2022-09-17 23:53:42.053 +03:00 [INF] Get method called successfully
+2022-09-17 23:53:42.078 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 198.0000 ms
+2022-09-17 23:58:27.454 +03:00 [INF] Get method called successfully
+2022-09-17 23:58:27.469 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 251645.0000 ms
+2022-09-17 23:59:55.077 +03:00 [INF] Get method called successfully
+2022-09-17 23:59:55.089 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 9531.0000 ms
+2022-09-20 23:49:44.497 +03:00 [ERR] HTTP GET / responded 404 in 23.0000 ms
+2022-09-20 23:55:36.671 +03:00 [ERR] HTTP GET / responded 404 in 17.0000 ms
+2022-09-20 23:57:46.004 +03:00 [ERR] HTTP GET / responded 404 in 17.0000 ms
+2022-09-20 23:57:52.419 +03:00 [WRN] No type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-20 23:57:52.422 +03:00 [WRN] No type was specified for the decimal property 'Rating' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-20 23:57:52.425 +03:00 [WRN] No type was specified for the decimal property 'Rating' on entity type 'Seller'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-20 23:57:53.489 +03:00 [INF] Get method called successfully
+2022-09-20 23:57:53.514 +03:00 [INF] HTTP GET /products/getallproducts responded 200 in 2681.0000 ms
+2022-09-20 23:57:53.783 +03:00 [ERR] HTTP GET /favicon.ico responded 404 in 2.0000 ms
+2022-09-21 00:01:00.785 +03:00 [INF] Get method called successfully
+2022-09-21 00:01:00.804 +03:00 [INF] HTTP GET /products/getallproducts responded 200 in 159390.0000 ms
+2022-09-21 00:01:48.142 +03:00 [INF] Get method called successfully
+2022-09-21 00:01:48.147 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 2284.0000 ms
+2022-09-21 00:02:23.904 +03:00 [ERR] HTTP GET / responded 404 in 25.0000 ms
+2022-09-21 00:03:18.319 +03:00 [ERR] Categories/GetAllCategories - There is an exception: Value cannot be null. (Parameter 'configuration')
+2022-09-21 00:03:18.319 +03:00 [ERR] Products/GetAllProducts - There is an exception: Value cannot be null. (Parameter 'configuration')
+2022-09-21 00:03:18.348 +03:00 [ERR] HTTP GET /products/getallproducts responded 500 in 1595.0000 ms
+2022-09-21 00:03:18.351 +03:00 [ERR] HTTP GET /categories/getallcategories responded 500 in 1595.0000 ms
+2022-09-21 00:03:57.775 +03:00 [ERR] Categories/GetAllCategories - There is an exception: Value cannot be null. (Parameter 'configuration')
+2022-09-21 00:03:57.780 +03:00 [ERR] HTTP GET /categories/getallcategories responded 500 in 18464.0000 ms
+2022-09-21 00:04:57.842 +03:00 [ERR] Categories/GetAllCategories - There is an exception: Value cannot be null. (Parameter 'configuration')
+2022-09-21 00:04:57.856 +03:00 [ERR] HTTP GET /categories/getallcategories responded 500 in 57603.0000 ms
+2022-09-21 00:05:08.802 +03:00 [ERR] Categories/GetAllCategories - There is an exception: Value cannot be null. (Parameter 'configuration')
+2022-09-21 00:05:08.805 +03:00 [ERR] HTTP GET /categories/getallcategories responded 500 in 7509.0000 ms
+2022-09-21 00:05:37.795 +03:00 [ERR] Categories/GetAllCategories - There is an exception: Value cannot be null. (Parameter 'configuration')
+2022-09-21 00:05:37.800 +03:00 [ERR] HTTP GET /categories/getallcategories responded 500 in 2084.0000 ms
+2022-09-21 00:07:27.207 +03:00 [ERR] HTTP GET / responded 404 in 17.0000 ms
+2022-09-21 00:08:02.740 +03:00 [WRN] No type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-21 00:08:02.744 +03:00 [WRN] No type was specified for the decimal property 'Rating' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-21 00:08:02.746 +03:00 [WRN] No type was specified for the decimal property 'Rating' on entity type 'Seller'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-21 00:08:03.548 +03:00 [INF] Get method called successfully
+2022-09-21 00:08:03.568 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 8838.0000 ms
+2022-09-21 00:09:16.235 +03:00 [ERR] HTTP GET / responded 404 in 23.0000 ms
+2022-09-21 00:09:31.588 +03:00 [ERR] Categories/GetAllCategories - There is an exception: Value cannot be null. (Parameter 'configuration')
+2022-09-21 00:09:31.607 +03:00 [ERR] HTTP GET /categories/getallcategories responded 500 in 2664.0000 ms
+2022-09-21 00:19:29.693 +03:00 [ERR] Products/GetAllProducts - There is an exception: Value cannot be null. (Parameter 'configuration')
+2022-09-21 00:19:29.702 +03:00 [ERR] HTTP GET /products/getallproducts responded 500 in 2128.0000 ms
+2022-09-21 00:20:05.881 +03:00 [ERR] HTTP GET / responded 404 in 20.0000 ms
+2022-09-21 00:20:50.701 +03:00 [WRN] No type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-21 00:20:50.705 +03:00 [WRN] No type was specified for the decimal property 'Rating' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-21 00:20:50.707 +03:00 [WRN] No type was specified for the decimal property 'Rating' on entity type 'Seller'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-21 00:20:51.378 +03:00 [INF] Get method called successfully
+2022-09-21 00:20:51.401 +03:00 [INF] HTTP GET /products/getallproducts responded 200 in 3828.0000 ms

@@ -1,0 +1,19 @@
+version: '3.4'
+
+services:
+  webapi:
+    build:
+      context: .
+    container_name: cont_tk
+    ports:
+      - 5000:80
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+    depends_on:
+      - redis
+
+  redis:    
+    image: redis
+    ports:
+      - "6379:6379"
