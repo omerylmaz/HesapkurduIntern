@@ -12,4 +12,10 @@ namespace Infrastructure.Models
         [StringLength(50)]
         public string Name { get; set; }
     }
+
+    public class AddCategoryReqModel
+    {
+        public string Name { get; set; }
+    }
 }
+//not: fluent validation

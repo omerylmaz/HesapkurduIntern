@@ -40,7 +40,11 @@ namespace WebAPI
                 builder.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin()));
             services.DI();
             services.AddMemoryCache();
-            services.AddStackExchangeRedisCache(options => options.Configuration = "localhost:6379");
+            services.AddStackExchangeRedisCache(options =>
+            {
+                options.Configuration = "redis:6379";
+                //options.ConfigurationOptions.AbortOnConnectFail = false;
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -1672,3 +1672,167 @@ System.ArgumentNullException: Value cannot be null. (Parameter 'value')
 2022-08-08 00:36:27.714 +03:00 [INF] HTTP GET /products/GetProductById responded 200 in 17.0000 ms
 2022-08-08 12:43:57.931 +03:00 [ERR] HTTP GET / responded 404 in 26.0000 ms
 2022-08-08 12:50:08.419 +03:00 [ERR] HTTP GET / responded 404 in 31.0000 ms
+2022-08-11 18:57:59.250 +03:00 [ERR] HTTP GET / responded 404 in 16.0000 ms
+2022-08-11 18:59:23.376 +03:00 [ERR] HTTP GET /getallcategories responded 404 in 7.0000 ms
+2022-08-11 18:59:41.784 +03:00 [ERR] HTTP GET /getallproducts responded 404 in 1.0000 ms
+2022-08-11 21:39:49.907 +03:00 [ERR] HTTP GET / responded 404 in 22.0000 ms
+2022-08-11 21:40:30.246 +03:00 [ERR] HTTP GET /getallcategories responded 404 in 8.0000 ms
+2022-08-11 21:40:59.456 +03:00 [ERR] HTTP GET /GetAllProducts responded 404 in 1.0000 ms
+2022-08-11 22:02:19.308 +03:00 [ERR] HTTP GET / responded 404 in 16.0000 ms
+2022-08-11 22:02:28.294 +03:00 [ERR] HTTP GET /getallcategories responded 404 in 1.0000 ms
+2022-08-11 22:03:01.528 +03:00 [ERR] HTTP GET / responded 404 in 19.0000 ms
+2022-08-11 22:04:25.136 +03:00 [ERR] HTTP GET / responded 404 in 16.0000 ms
+2022-08-11 22:04:41.580 +03:00 [WRN] No type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-08-11 22:04:41.583 +03:00 [WRN] No type was specified for the decimal property 'Rating' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-08-11 22:04:41.585 +03:00 [WRN] No type was specified for the decimal property 'Rating' on entity type 'Seller'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-08-11 22:04:57.183 +03:00 [ERR] An error occurred using the connection to database 'TrendKurdu' on server 'WSHQIT030\SQLEXPRESS'.
+2022-08-11 22:04:57.279 +03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'DataAccess.EntityFramework.TrendkurduDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SNI_PN11, error: 26 - Error Locating Server/Instance Specified)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover, SqlAuthenticationMethod authType)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SNI_PN11, error: 26 - Error Locating Server/Instance Specified)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover, SqlAuthenticationMethod authType)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2022-08-11 22:04:57.371 +03:00 [ERR] Products/GetAllProducts - There is an exception: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SNI_PN11, error: 26 - Error Locating Server/Instance Specified)
+2022-08-11 22:04:57.390 +03:00 [ERR] HTTP GET /products/getallproducts responded 500 in 24412.0000 ms
+2022-08-11 22:04:57.462 +03:00 [ERR] HTTP GET /favicon.ico responded 404 in 2.0000 ms
+2022-08-11 22:06:14.462 +03:00 [ERR] HTTP GET / responded 404 in 17.0000 ms
+2022-08-11 22:07:07.094 +03:00 [ERR] HTTP GET / responded 404 in 15.0000 ms
+2022-08-11 22:07:22.476 +03:00 [WRN] No type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-08-11 22:07:22.481 +03:00 [WRN] No type was specified for the decimal property 'Rating' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-08-11 22:07:22.483 +03:00 [WRN] No type was specified for the decimal property 'Rating' on entity type 'Seller'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-08-11 22:07:23.051 +03:00 [INF] Get method called successfully
+2022-08-11 22:07:23.080 +03:00 [INF] HTTP GET /products/getallproducts responded 200 in 3904.0000 ms
+2022-09-12 00:09:32.239 +03:00 [ERR] HTTP GET / responded 404 in 18.0000 ms
+2022-09-12 00:09:56.123 +03:00 [ERR] Products/GetAllProducts - There is an exception: It was not possible to connect to the redis server(s). Error connecting right now. To allow this multiplexer to continue retrying until it's able to connect, use abortConnect=false in your connection string or AbortOnConnectFail=false; in your code.
+2022-09-12 00:09:56.148 +03:00 [ERR] HTTP GET /products/getallproducts responded 500 in 10023.0000 ms
+2022-09-12 00:09:56.390 +03:00 [ERR] HTTP GET /favicon.ico responded 404 in 1.0000 ms
+2022-09-12 00:12:12.206 +03:00 [ERR] HTTP GET / responded 404 in 16.0000 ms
+2022-09-12 00:12:33.079 +03:00 [ERR] Products/GetAllProducts - There is an exception: It was not possible to connect to the redis server(s). Error connecting right now. To allow this multiplexer to continue retrying until it's able to connect, use abortConnect=false in your connection string or AbortOnConnectFail=false; in your code.
+2022-09-12 00:12:33.099 +03:00 [ERR] HTTP GET /products/getallproducts responded 500 in 9590.0000 ms
+2022-09-12 00:41:24.470 +03:00 [ERR] HTTP GET / responded 404 in 21.0000 ms
+2022-09-12 00:41:44.138 +03:00 [ERR] Products/GetAllProducts - There is an exception: It was not possible to connect to the redis server(s). Error connecting right now. To allow this multiplexer to continue retrying until it's able to connect, use abortConnect=false in your connection string or AbortOnConnectFail=false; in your code.
+2022-09-12 00:41:44.158 +03:00 [ERR] HTTP GET /products/getallproducts responded 500 in 9633.0000 ms
+2022-09-17 22:41:24.526 +03:00 [ERR] HTTP GET / responded 404 in 22.0000 ms
+2022-09-17 22:41:59.762 +03:00 [WRN] No type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-17 22:41:59.767 +03:00 [WRN] No type was specified for the decimal property 'Rating' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-17 22:41:59.769 +03:00 [WRN] No type was specified for the decimal property 'Rating' on entity type 'Seller'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-17 22:42:00.779 +03:00 [INF] Get method called successfully
+2022-09-17 22:42:00.807 +03:00 [INF] HTTP GET /products/getallproducts responded 200 in 2645.0000 ms
+2022-09-17 22:42:01.063 +03:00 [ERR] HTTP GET /favicon.ico responded 404 in 1.0000 ms
+2022-09-17 23:07:09.609 +03:00 [ERR] HTTP GET / responded 404 in 24.0000 ms
+2022-09-17 23:19:19.463 +03:00 [ERR] HTTP GET / responded 404 in 15.0000 ms
+2022-09-17 23:19:22.788 +03:00 [WRN] No type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-17 23:19:22.792 +03:00 [WRN] No type was specified for the decimal property 'Rating' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-17 23:19:22.795 +03:00 [WRN] No type was specified for the decimal property 'Rating' on entity type 'Seller'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-17 23:19:23.342 +03:00 [INF] Get method called successfully
+2022-09-17 23:19:23.363 +03:00 [INF] HTTP GET /products/getallproducts responded 200 in 1421.0000 ms
+2022-09-17 23:47:53.346 +03:00 [ERR] HTTP GET / responded 404 in 44.0000 ms
+2022-09-17 23:48:04.104 +03:00 [WRN] No type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-17 23:48:04.109 +03:00 [WRN] No type was specified for the decimal property 'Rating' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-17 23:48:04.113 +03:00 [WRN] No type was specified for the decimal property 'Rating' on entity type 'Seller'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-17 23:48:06.439 +03:00 [INF] Get method called successfully
+2022-09-17 23:48:06.545 +03:00 [INF] HTTP GET /products/getallproducts responded 200 in 5677.0000 ms
+2022-09-17 23:53:20.469 +03:00 [INF] HTTP POST /categories/addcategory responded 201 in 1987.0000 ms
+2022-09-17 23:53:26.336 +03:00 [INF] HTTP POST /categories/addcategory responded 201 in 176.0000 ms
+2022-09-17 23:53:42.053 +03:00 [INF] Get method called successfully
+2022-09-17 23:53:42.078 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 198.0000 ms
+2022-09-17 23:58:27.454 +03:00 [INF] Get method called successfully
+2022-09-17 23:58:27.469 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 251645.0000 ms
+2022-09-17 23:59:55.077 +03:00 [INF] Get method called successfully
+2022-09-17 23:59:55.089 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 9531.0000 ms
+2022-09-20 23:49:44.497 +03:00 [ERR] HTTP GET / responded 404 in 23.0000 ms
+2022-09-20 23:55:36.671 +03:00 [ERR] HTTP GET / responded 404 in 17.0000 ms
+2022-09-20 23:57:46.004 +03:00 [ERR] HTTP GET / responded 404 in 17.0000 ms
+2022-09-20 23:57:52.419 +03:00 [WRN] No type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-20 23:57:52.422 +03:00 [WRN] No type was specified for the decimal property 'Rating' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-20 23:57:52.425 +03:00 [WRN] No type was specified for the decimal property 'Rating' on entity type 'Seller'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-20 23:57:53.489 +03:00 [INF] Get method called successfully
+2022-09-20 23:57:53.514 +03:00 [INF] HTTP GET /products/getallproducts responded 200 in 2681.0000 ms
+2022-09-20 23:57:53.783 +03:00 [ERR] HTTP GET /favicon.ico responded 404 in 2.0000 ms
+2022-09-21 00:01:00.785 +03:00 [INF] Get method called successfully
+2022-09-21 00:01:00.804 +03:00 [INF] HTTP GET /products/getallproducts responded 200 in 159390.0000 ms
+2022-09-21 00:01:48.142 +03:00 [INF] Get method called successfully
+2022-09-21 00:01:48.147 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 2284.0000 ms
+2022-09-21 00:02:23.904 +03:00 [ERR] HTTP GET / responded 404 in 25.0000 ms
+2022-09-21 00:03:18.319 +03:00 [ERR] Categories/GetAllCategories - There is an exception: Value cannot be null. (Parameter 'configuration')
+2022-09-21 00:03:18.319 +03:00 [ERR] Products/GetAllProducts - There is an exception: Value cannot be null. (Parameter 'configuration')
+2022-09-21 00:03:18.348 +03:00 [ERR] HTTP GET /products/getallproducts responded 500 in 1595.0000 ms
+2022-09-21 00:03:18.351 +03:00 [ERR] HTTP GET /categories/getallcategories responded 500 in 1595.0000 ms
+2022-09-21 00:03:57.775 +03:00 [ERR] Categories/GetAllCategories - There is an exception: Value cannot be null. (Parameter 'configuration')
+2022-09-21 00:03:57.780 +03:00 [ERR] HTTP GET /categories/getallcategories responded 500 in 18464.0000 ms
+2022-09-21 00:04:57.842 +03:00 [ERR] Categories/GetAllCategories - There is an exception: Value cannot be null. (Parameter 'configuration')
+2022-09-21 00:04:57.856 +03:00 [ERR] HTTP GET /categories/getallcategories responded 500 in 57603.0000 ms
+2022-09-21 00:05:08.802 +03:00 [ERR] Categories/GetAllCategories - There is an exception: Value cannot be null. (Parameter 'configuration')
+2022-09-21 00:05:08.805 +03:00 [ERR] HTTP GET /categories/getallcategories responded 500 in 7509.0000 ms
+2022-09-21 00:05:37.795 +03:00 [ERR] Categories/GetAllCategories - There is an exception: Value cannot be null. (Parameter 'configuration')
+2022-09-21 00:05:37.800 +03:00 [ERR] HTTP GET /categories/getallcategories responded 500 in 2084.0000 ms
+2022-09-21 00:07:27.207 +03:00 [ERR] HTTP GET / responded 404 in 17.0000 ms
+2022-09-21 00:08:02.740 +03:00 [WRN] No type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-21 00:08:02.744 +03:00 [WRN] No type was specified for the decimal property 'Rating' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-21 00:08:02.746 +03:00 [WRN] No type was specified for the decimal property 'Rating' on entity type 'Seller'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-21 00:08:03.548 +03:00 [INF] Get method called successfully
+2022-09-21 00:08:03.568 +03:00 [INF] HTTP GET /categories/getallcategories responded 200 in 8838.0000 ms
+2022-09-21 00:09:16.235 +03:00 [ERR] HTTP GET / responded 404 in 23.0000 ms
+2022-09-21 00:09:31.588 +03:00 [ERR] Categories/GetAllCategories - There is an exception: Value cannot be null. (Parameter 'configuration')
+2022-09-21 00:09:31.607 +03:00 [ERR] HTTP GET /categories/getallcategories responded 500 in 2664.0000 ms
+2022-09-21 00:19:29.693 +03:00 [ERR] Products/GetAllProducts - There is an exception: Value cannot be null. (Parameter 'configuration')
+2022-09-21 00:19:29.702 +03:00 [ERR] HTTP GET /products/getallproducts responded 500 in 2128.0000 ms
+2022-09-21 00:20:05.881 +03:00 [ERR] HTTP GET / responded 404 in 20.0000 ms
+2022-09-21 00:20:50.701 +03:00 [WRN] No type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-21 00:20:50.705 +03:00 [WRN] No type was specified for the decimal property 'Rating' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-21 00:20:50.707 +03:00 [WRN] No type was specified for the decimal property 'Rating' on entity type 'Seller'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2022-09-21 00:20:51.378 +03:00 [INF] Get method called successfully
+2022-09-21 00:20:51.401 +03:00 [INF] HTTP GET /products/getallproducts responded 200 in 3828.0000 ms
